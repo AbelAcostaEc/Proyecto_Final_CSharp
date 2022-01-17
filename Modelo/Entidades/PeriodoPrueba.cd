@@ -3,7 +3,7 @@
   <Class Name="Modelo.Entidades.Evaluacion" Collapsed="true">
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgABAAAAAAAEAAABAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entidades\Evaluacion.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -17,7 +17,7 @@
   <Class Name="Modelo.Entidades.Empleado" Collapsed="true">
     <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAABBIAAABAgAAAAIAAAAAAAAAAAAgAAAI=</HashCode>
+      <HashCode>AAAQAAAAAAAABBIAAABAgAAAAIAAAAAAAAAAAAgAAAI=</HashCode>
       <FileName>Entidades\Empleado.cs</FileName>
     </TypeIdentifier>
   </Class>

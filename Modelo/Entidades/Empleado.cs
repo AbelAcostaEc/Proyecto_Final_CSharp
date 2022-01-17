@@ -13,6 +13,7 @@ namespace Modelo.Entidades
         public int Cedula { get; set; }
         public string Correo { get; set; }
         public int Celular { get; set; }
+
         // relacion Biometrico
         public List<Biometrico> Biometricos { get; set; }
 
@@ -21,5 +22,7 @@ namespace Modelo.Entidades
 
         //relacion Ventas
         public List<Venta> Ventas { get; set; }
+        //relacion evaluacion
+        public Evaluacion Evaluacion { get; set; }
     }
 }
