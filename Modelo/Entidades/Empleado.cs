@@ -17,7 +17,9 @@ namespace Modelo.Entidades
         public List<Biometrico> Biometricos { get; set; }
 
         //relacion Permiso
-
         public List<Permiso> Permisos { get; set; }
+
+        //relacion Ventas
+        public List<Venta> Ventas { get; set; }
     }
 }
