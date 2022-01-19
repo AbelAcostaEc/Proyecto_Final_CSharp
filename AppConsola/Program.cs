@@ -14,15 +14,20 @@ namespace AppConsola
                 Cedula = 1726139924,
                 Correo = "abel@gmail.com",
                 Celular = 0999200394,
-                Biometricos = new List<Biometrico>() { new Biometrico() { } },
+                Biometricos = new List<Biometrico>() { new Biometrico() {
+
+                Entrada = new DateTime(),
+                Salida = new DateTime(),
+                Fecha = new DateTime(),
+
+            }
+        },
+
                 Permisos = new List<Permiso>() { new Permiso() { } },
                 Ventas = new List<Venta>() { new Venta() { } },
                 Evaluacion = new Evaluacion()
             };
-            Biometrico Dia1 = new Biometrico()
-            {
 
-            }
         }
     }
 }
