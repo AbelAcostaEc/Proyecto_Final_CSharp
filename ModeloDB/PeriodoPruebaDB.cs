@@ -14,7 +14,7 @@ namespace ModeloDB
         //Declaración entidades del modelo DB
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Biometrico> Biometricos { get; set; }
-        public DbSet<Evaluacion> Evaluacions { get; set; }
+        public DbSet<Evaluacion> Evaluaciones { get; set; }
         public DbSet<Permiso> Permisos { get; set; }
         public DbSet<Venta> Ventas { get; set; }
 

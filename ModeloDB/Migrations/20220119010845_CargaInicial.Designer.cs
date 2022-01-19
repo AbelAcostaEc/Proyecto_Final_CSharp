@@ -10,7 +10,7 @@ using ModeloDB;
 namespace ModeloDB.Migrations
 {
     [DbContext(typeof(PeriodoPruebaDB))]
-    [Migration("20220119005142_CargaInicial")]
+    [Migration("20220119010845_CargaInicial")]
     partial class CargaInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,7 +92,7 @@ namespace ModeloDB.Migrations
                     b.HasIndex("EmpleadoId")
                         .IsUnique();
 
-                    b.ToTable("Evaluacions");
+                    b.ToTable("Evaluaciones");
                 });
 
             modelBuilder.Entity("Modelo.Entidades.Permiso", b =>

@@ -46,7 +46,7 @@ namespace ModeloDB.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Evaluacions",
+                name: "Evaluaciones",
                 columns: table => new
                 {
                     EvaluacionId = table.Column<int>(type: "int", nullable: false)
@@ -57,9 +57,9 @@ namespace ModeloDB.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Evaluacions", x => x.EvaluacionId);
+                    table.PrimaryKey("PK_Evaluaciones", x => x.EvaluacionId);
                     table.ForeignKey(
-                        name: "FK_Evaluacions_Empleados_EmpleadoId",
+                        name: "FK_Evaluaciones_Empleados_EmpleadoId",
                         column: x => x.EmpleadoId,
                         principalTable: "Empleados",
                         principalColumn: "EmpleadoId",
@@ -115,8 +115,8 @@ namespace ModeloDB.Migrations
                 column: "EmpleadoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Evaluacions_EmpleadoId",
-                table: "Evaluacions",
+                name: "IX_Evaluaciones_EmpleadoId",
+                table: "Evaluaciones",
                 column: "EmpleadoId",
                 unique: true);
 
@@ -137,7 +137,7 @@ namespace ModeloDB.Migrations
                 name: "Biometricos");
 
             migrationBuilder.DropTable(
-                name: "Evaluacions");
+                name: "Evaluaciones");
 
             migrationBuilder.DropTable(
                 name: "Permisos");

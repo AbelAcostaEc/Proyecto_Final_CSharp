@@ -90,7 +90,7 @@ namespace ModeloDB.Migrations
                     b.HasIndex("EmpleadoId")
                         .IsUnique();
 
-                    b.ToTable("Evaluacions");
+                    b.ToTable("Evaluaciones");
                 });
 
             modelBuilder.Entity("Modelo.Entidades.Permiso", b =>
