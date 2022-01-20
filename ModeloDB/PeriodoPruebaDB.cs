@@ -18,6 +18,7 @@ namespace ModeloDB
         public DbSet<Permiso> Permisos { get; set; }
         public DbSet<Venta> Ventas { get; set; }
 
+        //configuracipon de la conexion
         override protected void OnConfiguring(DbContextOptionsBuilder options)
         {
             //Linea concexion SQL SERVER
@@ -25,6 +26,29 @@ namespace ModeloDB
 
             //Conexion con sql server
             options.UseSqlServer(conSQLServer);
+
+        }
+
+        //configuracion modelo de objetos
+        protected override void OnModelCreating(ModelBuilder model)
+        {
+            //cardinalidad biometricos empleados
+            model.Entity<Biometrico>()
+                .HasOne(biometrico => biometrico.Empleado)
+                .WithMany(empleado => empleado.Biometricos)
+                .HasForeignKey(biometrico => biometrico.EmpleadoId);
+
+            //cardinalidad ventas empleado
+            model.Entity<Venta>()
+                .HasOne(venta => venta.Empleado)
+                .WithMany(empleado => empleado.Ventas)
+                .HasForeignKey(venta => venta.EmpleadoId);
+
+            //empleado evaluaacion 2 calses 1 a uno
+            model.Entity<Empleado>()
+                .HasOne(empleado => empleado.Evaluacion)
+                .WithOne(evaluacion => evaluacion.Empleado)
+                .HasForeignKey<Evaluacion>(evaluacion => evaluacion.EmpleadoId);
 
         }
     }

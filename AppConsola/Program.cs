@@ -56,7 +56,7 @@ namespace AppConsola
                 }
             };
 
-            // Andrea
+            
             
 
             PeriodoPruebaDB repos = new PeriodoPruebaDB();
