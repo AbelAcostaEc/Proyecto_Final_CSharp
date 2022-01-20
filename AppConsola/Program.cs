@@ -59,9 +59,9 @@ namespace AppConsola
             
             
 
-            PeriodoPruebaDB repos = new PeriodoPruebaDB();
-            repos.Empleados.Add(Empleado1);
-            repos.SaveChanges();
+            //PeriodoPruebaDB repos = new PeriodoPruebaDB();
+            //repos.Empleados.Add(Empleado1);
+            //repos.SaveChanges();
 
 
         }
