@@ -32,6 +32,7 @@ namespace ModeloDB
         //configuracion modelo de objetos
         protected override void OnModelCreating(ModelBuilder model)
         {
+            //Relaciones 1 a muchos
             //cardinalidad biometricos empleados
             model.Entity<Biometrico>()
                 .HasOne(biometrico => biometrico.Empleado)
@@ -44,7 +45,14 @@ namespace ModeloDB
                 .WithMany(empleado => empleado.Ventas)
                 .HasForeignKey(venta => venta.EmpleadoId);
 
-            //empleado evaluaacion 2 calses 1 a uno
+            //cardinalidad ventas empleado
+            model.Entity<Permiso>()
+                .HasOne(permiso => permiso.Empleado)
+                .WithMany(empleado => empleado.Permisos)
+                .HasForeignKey(permiso => permiso.EmpleadoId);
+
+            //Relaciones 1 a 1
+            //empleado evaluacion 
             model.Entity<Empleado>()
                 .HasOne(empleado => empleado.Evaluacion)
                 .WithOne(evaluacion => evaluacion.Empleado)
