@@ -74,6 +74,7 @@ namespace ModeloDB
               .HasOne(capacitacionasistencia => capacitacionasistencia.Capacitacion)
               .WithMany(capacitacion => capacitacion.CapacitacionAsistencias)
               .HasForeignKey(capacitacionasistencia => capacitacionasistencia.CapacitacionId);
+            
 
             //-Empleado
             model.Entity<CapacitacionAsistencia>()

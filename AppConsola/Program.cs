@@ -49,19 +49,26 @@ namespace AppConsola
                 Biometricos = new List<Biometrico>() { dia1,dia2,dia3},
                 Permisos = new List<Permiso>() {  },
                 Ventas = new List<Venta>() { v1,v2 },
+                Implemento= new Implemento()
+                {
+                    Estado="Excelente",
+                    Observacion="Implementos de trabajo en buen estado"
+                },
+                
                 Evaluacion = new Evaluacion()
                 {
                     Fecha= new DateTime(2022,01,05),
                     Calificacion="Buena"
                 }
+               
             };
 
-            
-            
 
-            //PeriodoPruebaDB repos = new PeriodoPruebaDB();
-            //repos.Empleados.Add(Empleado1);
-            //repos.SaveChanges();
+
+
+            PeriodoPruebaDB repos = new PeriodoPruebaDB();
+            repos.Empleados.Add(Empleado1);
+            repos.SaveChanges();
 
 
         }
