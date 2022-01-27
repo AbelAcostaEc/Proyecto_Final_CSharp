@@ -1,0 +1,54 @@
+﻿@using Modelo.Entidades;
+
+@model IEnumerable<Capacitacion>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Capacitaciones</h1>
+<p>A continuación se presenta la lista de Capacitaciones</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Capacitaciones</h3>
+        </div>
+        <div class="col-sm-6">
+            <a href="" class="btn btn-success d-block">Agregar nueva Capacitación</a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Tema</td>
+                    <td>Fecha</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Capacitacion capacitacion in Model)
+                {
+                    <tr>
+                        <td>@capacitacion.CapacitacionId</td>
+                        <td>@capacitacion.Tema</td>
+                        <td>@capacitacion.Fecha</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Editar</a>
+                            <a href="#" class="btn btn-danger">Borrar</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+

@@ -1,0 +1,55 @@
+﻿@using Modelo.Entidades;
+
+@model IEnumerable<Evaluacion>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Lista de Evaluaciones</h1>
+<p>A continuación se presenta la lista de Evaluaciones</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Evaluaciones</h3>
+        </div>
+        <div class="col-sm-6">
+            <a href="" class="btn btn-success d-block">Agregar nueva Evaluación</a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Fecha</td>
+                    <td>Calificacion</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Evaluacion evaluacion in Model)
+                {
+                    <tr>
+                        <td>@evaluacion.EvaluacionId</td>
+                        <td>@evaluacion.Fecha</td>
+                        <td>@evaluacion.Calificacion</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Editar</a>
+                            <a href="#" class="btn btn-danger">Borrar</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+

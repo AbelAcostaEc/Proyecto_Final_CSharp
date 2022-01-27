@@ -1,0 +1,62 @@
+﻿@using Modelo.Entidades;
+
+@*@model listaBiometricos*@
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Lista de Biometricos</h1>
+<p>A continuación se presenta la lista de Biometricos</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Biometricos</h3>
+        </div>
+        <div class="col-sm-6">
+            <a href="" class="btn btn-success d-block">Agregar nuevo Biometrico</a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Hora Entrada</td>
+                    <td>Hora Salida</td>
+                    <td>Fecha</td>
+                    @*<td>Empleado</td>*@
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Biometrico biometrico in Model)
+                {
+                <tr>
+                    <td>@biometrico.BiometricoId</td>
+                    <td>@biometrico.Entrada</td>
+                    <td>@biometrico.Salida</td>
+                    <td>@biometrico.Fecha</td>
+                    @*<td>@biometrico.Empleado.Nombre</td>*@
+                    <td>
+                        <a href="#" class="btn btn-primary">Editar</a>
+                        <a href="#" class="btn btn-danger">Borrar</a>
+                    </td>
+                </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+
+
+

@@ -11,6 +11,14 @@ namespace ModeloDB
     public class PeriodoPruebaDB : DbContext
 
     {
+
+        //Constructor invoca constructor del padre
+        public PeriodoPruebaDB(DbContextOptions<PeriodoPruebaDB> options)
+        : base(options)
+        {
+
+        }
+
         //Declaración entidades del modelo DB
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Biometrico> Biometricos { get; set; }
@@ -21,7 +29,8 @@ namespace ModeloDB
         public DbSet<Capacitacion> Capacitaciones  { get; set; }
         public DbSet<CapacitacionAsistencia> CapacitacionAsistencias  { get; set; }
 
-        //configuracipon de la conexion
+        /*
+        //configuración de la conexion
         override protected void OnConfiguring(DbContextOptionsBuilder options)
         {
             //Linea concexion SQL SERVER
@@ -31,6 +40,7 @@ namespace ModeloDB
             options.UseSqlServer(conSQLServer);
 
         }
+        */
 
         //configuracion modelo de objetos
         protected override void OnModelCreating(ModelBuilder model)

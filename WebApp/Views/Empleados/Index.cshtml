@@ -1,0 +1,58 @@
+﻿@using Modelo.Entidades;
+
+@model IEnumerable<Empleado>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Empleados</h1>
+<p>A continuación se presenta la lista de Empleados</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Empleados</h3>
+        </div>
+        <div class="col-sm-6">
+            <a href="" class="btn btn-success d-block">Agregar nuevo empleado</a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Cedula</td>
+                    <td>Nombre</td>
+                    <td>Correo</td>
+                    <td>Celular</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Empleado empleado in Model)
+                {
+                    <tr>
+                        <td>@empleado.EmpleadoId</td>
+                        <td>@empleado.Cedula</td>
+                        <td>@empleado.Nombre</td>
+                        <td>@empleado.Correo</td>
+                        <td>@empleado.Celular</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Editar</a>
+                            <a href="#" class="btn btn-danger">Borrar</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+
