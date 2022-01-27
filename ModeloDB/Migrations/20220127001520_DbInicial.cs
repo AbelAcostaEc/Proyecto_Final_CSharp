@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ModeloDB.Migrations
 {
-    public partial class DbIncial : Migration
+    public partial class DbInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

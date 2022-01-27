@@ -10,8 +10,8 @@ using ModeloDB;
 namespace ModeloDB.Migrations
 {
     [DbContext(typeof(PeriodoPruebaDB))]
-    [Migration("20220121061452_DbIncial")]
-    partial class DbIncial
+    [Migration("20220127001520_DbInicial")]
+    partial class DbInicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

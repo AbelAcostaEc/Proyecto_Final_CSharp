@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CargaDatos\CargaDatos.csproj" />
     <ProjectReference Include="..\ModeloDB\ModeloDB.csproj" />
   </ItemGroup>
 
