@@ -1,6 +1,7 @@
 ﻿@using Modelo.Entidades;
 
-@*@model listaBiometricos*@
+@model IEnumerable<Biometrico>
+
 
 @{
     ViewData["Title"] = "Index";
@@ -17,9 +18,20 @@
             <h3>Biometricos</h3>
         </div>
         <div class="col-sm-6">
-            <a href="" class="btn btn-success d-block">Agregar nuevo Biometrico</a>
+            <a asp-controller="Biometricos" asp-action="Create" class="btn btn-success d-block">Agregar nuevo Biometrico</a>
         </div>
     </div>
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["mensaje"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">
+                    &times;
+                </span>
+            </button>
+        </div>
+    }
 
     <div class="row">
 
@@ -37,17 +49,17 @@
             <tbody>
                 @foreach (Biometrico biometrico in Model)
                 {
-                <tr>
-                    <td>@biometrico.BiometricoId</td>
-                    <td>@biometrico.Entrada</td>
-                    <td>@biometrico.Salida</td>
-                    <td>@biometrico.Fecha</td>
-                    @*<td>@biometrico.Empleado.Nombre</td>*@
+                    <tr>
+                        <td>@biometrico.BiometricoId</td>
+                        <td>@biometrico.Entrada</td>
+                        <td>@biometrico.Salida</td>
+                        <td>@biometrico.Fecha</td>
+                        @*<td>@biometrico.Empleado.Nombre</td>*@
                     <td>
-                        <a href="#" class="btn btn-primary">Editar</a>
-                        <a href="#" class="btn btn-danger">Borrar</a>
+                        <a asp-controller="Biometricos" asp-action="Edit" asp-route-id="@biometrico.BiometricoId" class="btn btn-primary">Editar</a>
+                        <a asp-controller="Biometricos" asp-action="Delete" asp-route-id="@biometrico.BiometricoId" class="btn btn-danger">Eliminar</a>
                     </td>
-                </tr>
+                    </tr>
                 }
 
             </tbody>
