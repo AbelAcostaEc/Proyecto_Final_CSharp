@@ -1,0 +1,57 @@
+﻿@using Modelo.Entidades
+
+@model Venta 
+
+
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Creacion del Venta</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>
+                Nueva Venta
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10">
+            <form asp-action="Create" method="post">
+                <div class="form-group">
+                    <label class="custom-control-label">Fecha: </label>
+                    <input class="form-control" type="date" asp-for="Fecha" />
+                </div>
+                <div class="form-group">
+                    <label class="custom-control-label">Estado: </label>
+                    <input class="form-control" type="text" asp-for="Estado" />
+                </div>
+                <div class="form-group">
+                    
+                    <label class="custom-control-label">Empleado: </label>
+
+                    @*<select>
+                        @foreach (Empleado empleado in Model)
+                        {
+                            <option value="@empleado.EmpleadoId">@empleado.Nombre</option>
+                        }
+                    </select>*@
+                  
+                   
+                    <input class="form-control" type="hidden" value="8" asp-for="EmpleadoId" />
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Crear Venta" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+

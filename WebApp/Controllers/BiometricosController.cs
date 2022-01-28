@@ -21,11 +21,7 @@ namespace WebApp.Controllers
             IEnumerable<Biometrico> listaBiometricos = db.Biometricos;
             return View(listaBiometricos);
         }
-
-        public IActionResult Delete()
-        {
-            return View();
-        }
+      
         public IActionResult Create()
         {
             return View();

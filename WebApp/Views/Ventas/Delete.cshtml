@@ -1,0 +1,53 @@
+﻿@using Modelo.Entidades
+
+@model Venta
+
+
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Elimina del Venta</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>
+                Confirmar eliminado de Venta de fecha: @Model.Fecha
+
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10">
+            <form asp-action="Delete" method="post">
+                <input type="text" asp-for="VentaId" hidden />
+
+                <div class="form-group">
+                    <label class="custom-control-label">Fecha: </label>
+                    <input class="form-control" type="date" asp-for="Fecha" disabled />
+                </div>
+                <div class="form-group">
+                    <label class="custom-control-label">Estado: </label>
+                    <input class="form-control" type="text" asp-for="Estado" disabled />
+                </div>
+                <div class="form-group">
+
+                    @*<label class="custom-control-label">Empleado: </label>*@
+
+                    <input type="text" asp-for="EmpleadoId" hidden />
+
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Eliminar Venta" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+

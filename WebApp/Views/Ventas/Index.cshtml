@@ -1,0 +1,67 @@
+﻿@using Modelo.Entidades;
+
+@model IEnumerable<Venta>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Lista de Ventas</h1>
+<p>A continuación se presenta la lista de Ventas</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Empleados</h3>
+        </div>
+        <div class="col-sm-6">
+            <a  asp-controller="Ventas" asp-action="Create"class="btn btn-success d-block">Agregar nueva Venta</a>
+        </div>
+    </div>
+    @if (TempData["mensaje"] != null)
+    {
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["mensaje"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">
+                &times;
+            </span>
+        </button>
+    </div>
+    }
+
+    <div class="row">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Fecha</td>
+                    <td>Estado</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Venta venta in Model)
+                {
+                    <tr>
+                        <td>@venta.VentaId</td>
+                        <td>@venta.Fecha</td>
+                        <td>@venta.Estado</td>
+                        <td>
+                            <a asp-controller="Ventas" asp-action="Edit" asp-route-id="@venta.VentaId" class="btn btn-primary">Editar</a>
+                            <a asp-controller="Ventas" asp-action="Delete" asp-route-id="@venta.VentaId" class="btn btn-danger">Eliminar</a>
+
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
