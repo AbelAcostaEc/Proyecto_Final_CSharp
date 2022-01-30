@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Modelo.Entidades;
 using ModeloDB;
 using System;
@@ -18,7 +19,7 @@ namespace WebApp.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Biometrico> listaBiometricos = db.Biometricos;
+            IEnumerable<Biometrico> listaBiometricos = db.Biometricos.Include(b=>b.Empleado).ToList();
             return View(listaBiometricos);
         }
 

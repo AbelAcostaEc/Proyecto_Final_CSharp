@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Modelo.Entidades;
 using ModeloDB;
 using System;
@@ -18,7 +19,7 @@ namespace WebApp.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Evaluacion> listaEvaluaciones = db.Evaluaciones;
+            IEnumerable<Evaluacion> listaEvaluaciones = db.Evaluaciones.Include(e=>e.Empleado).ToList();
             return View(listaEvaluaciones);
         }
         //creación Evaluacion

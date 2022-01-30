@@ -37,6 +37,7 @@
             <thead>
                 <tr>
                     <td>Id</td>
+                    <td>Empleado</td>
                     <td>Fecha</td>
                     <td>Calificacion</td>
                     <td>Acciones</td>
@@ -45,15 +46,16 @@
             <tbody>
                 @foreach (Evaluacion evaluacion in Model)
                 {
-                    <tr>
-                        <td>@evaluacion.EvaluacionId</td>
-                        <td>@evaluacion.Fecha</td>
-                        <td>@evaluacion.Calificacion</td>
-                        <td>
-                            <a asp-controller="Evaluaciones" asp-action="Edit" asp-route-id="@evaluacion.EvaluacionId" class="btn btn-primary">Editar</a>
-                            <a asp-controller="Evaluaciones" asp-action="Delete" asp-route-id="@evaluacion.EvaluacionId" class="btn btn-danger">Eliminar</a>
-                        </td>
-                    </tr>
+                <tr>
+                    <td>@evaluacion.EvaluacionId</td>
+                    <td>@evaluacion.Empleado.Nombre</td>
+                    <td>@evaluacion.Fecha</td>
+                    <td>@evaluacion.Calificacion</td>
+                    <td>
+                        <a asp-controller="Evaluaciones" asp-action="Edit" asp-route-id="@evaluacion.EvaluacionId" class="btn btn-primary">Editar</a>
+                        <a asp-controller="Evaluaciones" asp-action="Delete" asp-route-id="@evaluacion.EvaluacionId" class="btn btn-danger">Eliminar</a>
+                    </td>
+                </tr>
                 }
 
             </tbody>

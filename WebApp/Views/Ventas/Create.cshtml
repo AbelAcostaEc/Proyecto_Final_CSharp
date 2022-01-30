@@ -1,6 +1,6 @@
 ﻿@using Modelo.Entidades
 
-@model Venta 
+@model Venta
 
 
 
@@ -36,9 +36,9 @@
                     <label class="custom-control-label">Empleado: </label>
 
                     @*<select>
-                        @foreach (Empleado empleado in Model)
+                        @foreach (Venta venta in Model)
                         {
-                            <option value="@empleado.EmpleadoId">@empleado.Nombre</option>
+                            <option value="@venta.EmpleadoId">@venta.Empleado.Nombre</option>
                         }
                     </select>*@
                   

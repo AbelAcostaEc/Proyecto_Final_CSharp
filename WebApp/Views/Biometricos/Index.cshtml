@@ -39,27 +39,28 @@
             <thead>
                 <tr>
                     <td>Id</td>
+                    <td>Empleado</td>
                     <td>Hora Entrada</td>
                     <td>Hora Salida</td>
                     <td>Fecha</td>
-                    @*<td>Empleado</td>*@
+                    
                     <td>Acciones</td>
                 </tr>
             </thead>
             <tbody>
                 @foreach (Biometrico biometrico in Model)
                 {
-                    <tr>
-                        <td>@biometrico.BiometricoId</td>
-                        <td>@biometrico.Entrada</td>
-                        <td>@biometrico.Salida</td>
-                        <td>@biometrico.Fecha</td>
-                        @*<td>@biometrico.Empleado.Nombre</td>*@
+                <tr>
+                    <td>@biometrico.BiometricoId</td>
+                    <td>@biometrico.Empleado.Nombre</td>
+                    <td>@biometrico.Entrada</td>
+                    <td>@biometrico.Salida</td>
+                    <td>@biometrico.Fecha</td>
                     <td>
                         <a asp-controller="Biometricos" asp-action="Edit" asp-route-id="@biometrico.BiometricoId" class="btn btn-primary">Editar</a>
                         <a asp-controller="Biometricos" asp-action="Delete" asp-route-id="@biometrico.BiometricoId" class="btn btn-danger">Eliminar</a>
                     </td>
-                    </tr>
+                </tr>
                 }
 
             </tbody>

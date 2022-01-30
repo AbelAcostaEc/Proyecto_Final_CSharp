@@ -38,6 +38,7 @@
             <thead>
                 <tr>
                     <td>Id</td>
+                    <td>Vendedor</td>
                     <td>Fecha</td>
                     <td>Estado</td>
                     <td>Acciones</td>
@@ -46,16 +47,17 @@
             <tbody>
                 @foreach (Venta venta in Model)
                 {
-                    <tr>
-                        <td>@venta.VentaId</td>
-                        <td>@venta.Fecha</td>
-                        <td>@venta.Estado</td>
-                        <td>
-                            <a asp-controller="Ventas" asp-action="Edit" asp-route-id="@venta.VentaId" class="btn btn-primary">Editar</a>
-                            <a asp-controller="Ventas" asp-action="Delete" asp-route-id="@venta.VentaId" class="btn btn-danger">Eliminar</a>
+                <tr>
+                    <td>@venta.VentaId</td>
+                    <td>@venta.Empleado.Nombre</td>
+                    <td>@venta.Fecha</td>
+                    <td>@venta.Estado</td>
+                    <td>
+                        <a asp-controller="Ventas" asp-action="Edit" asp-route-id="@venta.VentaId" class="btn btn-primary">Editar</a>
+                        <a asp-controller="Ventas" asp-action="Delete" asp-route-id="@venta.VentaId" class="btn btn-danger">Eliminar</a>
 
-                        </td>
-                    </tr>
+                    </td>
+                </tr>
                 }
 
             </tbody>

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebApp.Controllers
 {
@@ -19,7 +20,7 @@ namespace WebApp.Controllers
         }
         public IActionResult Index()
         {
-            IEnumerable<Venta> listaVentas = db.Ventas;
+            IEnumerable<Venta> listaVentas =db.Ventas.Include(v=>v.Empleado).ToList();
             return View(listaVentas);
         }
 
@@ -28,6 +29,7 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+
             return View();
         }
         [HttpPost]
