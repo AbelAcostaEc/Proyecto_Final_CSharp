@@ -29,22 +29,14 @@
                 </div>
                 <div class="form-group">
                     <label class="custom-control-label">Estado: </label>
-                    <input class="form-control" type="text" asp-for="Estado" />
+                    <select class="form-control"
+                            asp-for="Estado" asp-items="Html.GetEnumSelectList<EstadoVenta>()">
+                    </select>
                 </div>
-                <div class="form-group">
+                
                     
-                    <label class="custom-control-label">Empleado: </label>
-
-                    @*<select>
-                        @foreach (Venta venta in Model)
-                        {
-                            <option value="@venta.EmpleadoId">@venta.Empleado.Nombre</option>
-                        }
-                    </select>*@
-                  
-                   
-                    <input class="form-control" type="hidden" value="8" asp-for="EmpleadoId" />
-                </div>
+                    <input  type="hidden" value="8" asp-for="EmpleadoId" />
+                
                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Crear Venta" />
                 </div>

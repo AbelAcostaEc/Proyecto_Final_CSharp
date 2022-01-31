@@ -113,36 +113,36 @@ namespace CargaDatos
 
             //ventas Empleado 1
 
-            Venta E1v1 = new Venta() { Fecha = new DateTime(2021, 11, 27), Estado = "Completado" };
-            Venta E1v2 = new Venta() { Fecha = new DateTime(2021, 10, 2), Estado = "Completado" };
-            Venta E1v3 = new Venta() { Fecha = new DateTime(2021, 12, 28), Estado = "Completado" };
-            Venta E1v4 = new Venta() { Fecha = new DateTime(2021, 12, 19), Estado = "Completado" };
-            Venta E1v5 = new Venta() { Fecha = new DateTime(2021, 12, 1), Estado = "Completado" };
-            Venta E1v6 = new Venta() { Fecha = new DateTime(2021, 12, 18), Estado = "Completado" };
-            Venta E1v7 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = "Completado" };
-            Venta E1v8 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = "Completado" };
-            Venta E1v9 = new Venta() { Fecha = new DateTime(2021, 12, 20), Estado = "Completado" };
-            Venta E1v10 = new Venta() { Fecha = new DateTime(2021, 12, 21), Estado = "Completado" };
-            Venta E1v11 = new Venta() { Fecha = new DateTime(2021, 10, 24), Estado = "Completado" };
-            Venta E1v12 = new Venta() { Fecha = new DateTime(2021, 12, 14), Estado = "Completado" };
-            Venta E1v13 = new Venta() { Fecha = new DateTime(2021, 11, 22), Estado = "Completado" };
-            Venta E1v14 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = "Completado" };
-            Venta E1v15 = new Venta() { Fecha = new DateTime(2021, 12, 6), Estado = "Completado" };
-            Venta E1v16 = new Venta() { Fecha = new DateTime(2021, 10, 14), Estado = "Completado" };
-            Venta E1v17 = new Venta() { Fecha = new DateTime(2021, 10, 17), Estado = "Completado" };
-            Venta E1v18 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = "Completado" };
-            Venta E1v19 = new Venta() { Fecha = new DateTime(2021, 11, 29), Estado = "Completado" };
-            Venta E1v20 = new Venta() { Fecha = new DateTime(2021, 10, 7), Estado = "Completado" };
-            Venta E1v21 = new Venta() { Fecha = new DateTime(2021, 10, 5), Estado = "Completado" };
-            Venta E1v22 = new Venta() { Fecha = new DateTime(2021, 11, 29), Estado = "Completado" };
-            Venta E1v23 = new Venta() { Fecha = new DateTime(2021, 11, 27), Estado = "Completado" };
-            Venta E1v24 = new Venta() { Fecha = new DateTime(2021, 12, 8), Estado = "Completado" };
-            Venta E1v25 = new Venta() { Fecha = new DateTime(2021, 10, 11), Estado = "Completado" };
-            Venta E1v26 = new Venta() { Fecha = new DateTime(2021, 11, 23), Estado = "Completado" };
-            Venta E1v27 = new Venta() { Fecha = new DateTime(2021, 10, 3), Estado = "Completado" };
-            Venta E1v28 = new Venta() { Fecha = new DateTime(2021, 10, 8), Estado = "Completado" };
-            Venta E1v29 = new Venta() { Fecha = new DateTime(2021, 10, 16), Estado = "Completado" };
-            Venta E1v30 = new Venta() { Fecha = new DateTime(2021, 12, 28), Estado = "Completado" };
+            Venta E1v1 = new Venta() { Fecha = new DateTime(2021, 11, 27), Estado = EstadoVenta.Completado };
+            Venta E1v2 = new Venta() { Fecha = new DateTime(2021, 10, 2), Estado = EstadoVenta.Completado };
+            Venta E1v3 = new Venta() { Fecha = new DateTime(2021, 12, 28), Estado = EstadoVenta.Completado };
+            Venta E1v4 = new Venta() { Fecha = new DateTime(2021, 12, 19), Estado = EstadoVenta.Completado };
+            Venta E1v5 = new Venta() { Fecha = new DateTime(2021, 12, 1), Estado = EstadoVenta.Completado };
+            Venta E1v6 = new Venta() { Fecha = new DateTime(2021, 12, 18), Estado = EstadoVenta.Completado };
+            Venta E1v7 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = EstadoVenta.Completado };
+            Venta E1v8 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = EstadoVenta.Completado };
+            Venta E1v9 = new Venta() { Fecha = new DateTime(2021, 12, 20), Estado = EstadoVenta.Completado };
+            Venta E1v10 = new Venta() { Fecha = new DateTime(2021, 12, 21), Estado = EstadoVenta.Completado };
+            Venta E1v11 = new Venta() { Fecha = new DateTime(2021, 10, 24), Estado = EstadoVenta.Completado };
+            Venta E1v12 = new Venta() { Fecha = new DateTime(2021, 12, 14), Estado = EstadoVenta.Completado };
+            Venta E1v13 = new Venta() { Fecha = new DateTime(2021, 11, 22), Estado = EstadoVenta.Completado };
+            Venta E1v14 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = EstadoVenta.Completado };
+            Venta E1v15 = new Venta() { Fecha = new DateTime(2021, 12, 6), Estado = EstadoVenta.Completado };
+            Venta E1v16 = new Venta() { Fecha = new DateTime(2021, 10, 14), Estado = EstadoVenta.Completado };
+            Venta E1v17 = new Venta() { Fecha = new DateTime(2021, 10, 17), Estado = EstadoVenta.Completado };
+            Venta E1v18 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = EstadoVenta.Completado };
+            Venta E1v19 = new Venta() { Fecha = new DateTime(2021, 11, 29), Estado = EstadoVenta.Completado };
+            Venta E1v20 = new Venta() { Fecha = new DateTime(2021, 10, 7), Estado = EstadoVenta.Completado };
+            Venta E1v21 = new Venta() { Fecha = new DateTime(2021, 10, 5), Estado = EstadoVenta.Completado };
+            Venta E1v22 = new Venta() { Fecha = new DateTime(2021, 11, 29), Estado = EstadoVenta.Completado };
+            Venta E1v23 = new Venta() { Fecha = new DateTime(2021, 11, 27), Estado = EstadoVenta.Completado };
+            Venta E1v24 = new Venta() { Fecha = new DateTime(2021, 12, 8), Estado = EstadoVenta.Completado };
+            Venta E1v25 = new Venta() { Fecha = new DateTime(2021, 10, 11), Estado = EstadoVenta.Completado };
+            Venta E1v26 = new Venta() { Fecha = new DateTime(2021, 11, 23), Estado = EstadoVenta.Completado };
+            Venta E1v27 = new Venta() { Fecha = new DateTime(2021, 10, 3), Estado = EstadoVenta.Completado };
+            Venta E1v28 = new Venta() { Fecha = new DateTime(2021, 10, 8), Estado = EstadoVenta.Completado };
+            Venta E1v29 = new Venta() { Fecha = new DateTime(2021, 10, 16), Estado = EstadoVenta.Completado };
+            Venta E1v30 = new Venta() { Fecha = new DateTime(2021, 12, 28), Estado = EstadoVenta.Completado };
 
 
 
@@ -276,36 +276,36 @@ namespace CargaDatos
 
             //Ventas
 
-            Venta E2v1 = new Venta() { Fecha = new DateTime(2021, 12, 10), Estado = "Completado" };
-            Venta E2v2 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = "Completado" };
-            Venta E2v3 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = "Completado" };
-            Venta E2v4 = new Venta() { Fecha = new DateTime(2021, 10, 25), Estado = "Completado" };
-            Venta E2v5 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = "Completado" };
-            Venta E2v6 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = "Completado" };
-            Venta E2v7 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = "Completado" };
-            Venta E2v8 = new Venta() { Fecha = new DateTime(2021, 10, 21), Estado = "Completado" };
-            Venta E2v9 = new Venta() { Fecha = new DateTime(2021, 10, 18), Estado = "Completado" };
-            Venta E2v10 = new Venta() { Fecha = new DateTime(2021, 12, 26), Estado = "Completado" };
-            Venta E2v11 = new Venta() { Fecha = new DateTime(2021, 10, 2), Estado = "Completado" };
-            Venta E2v12 = new Venta() { Fecha = new DateTime(2021, 12, 9), Estado = "Completado" };
-            Venta E2v13 = new Venta() { Fecha = new DateTime(2021, 11, 19), Estado = "Completado" };
-            Venta E2v14 = new Venta() { Fecha = new DateTime(2021, 12, 3), Estado = "Completado" };
-            Venta E2v15 = new Venta() { Fecha = new DateTime(2021, 10, 26), Estado = "Completado" };
-            Venta E2v16 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = "Completado" };
-            Venta E2v17 = new Venta() { Fecha = new DateTime(2021, 10, 19), Estado = "Completado" };
-            Venta E2v18 = new Venta() { Fecha = new DateTime(2021, 11, 23), Estado = "Completado" };
-            Venta E2v19 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = "Completado" };
-            Venta E2v20 = new Venta() { Fecha = new DateTime(2021, 11, 22), Estado = "Completado" };
-            Venta E2v21 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = "Completado" };
-            Venta E2v22 = new Venta() { Fecha = new DateTime(2021, 11, 5), Estado = "Completado" };
-            Venta E2v23 = new Venta() { Fecha = new DateTime(2021, 10, 18), Estado = "Completado" };
-            Venta E2v24 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = "Completado" };
-            Venta E2v25 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = "Completado" };
-            Venta E2v26 = new Venta() { Fecha = new DateTime(2021, 12, 26), Estado = "Completado" };
-            Venta E2v27 = new Venta() { Fecha = new DateTime(2021, 11, 26), Estado = "Completado" };
-            Venta E2v28 = new Venta() { Fecha = new DateTime(2021, 11, 27), Estado = "Completado" };
-            Venta E2v29 = new Venta() { Fecha = new DateTime(2021, 11, 4), Estado = "Completado" };
-            Venta E2v30 = new Venta() { Fecha = new DateTime(2021, 11, 18), Estado = "Completado" };
+            Venta E2v1 = new Venta() { Fecha = new DateTime(2021, 12, 10), Estado = EstadoVenta.Completado };
+            Venta E2v2 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = EstadoVenta.Completado };
+            Venta E2v3 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = EstadoVenta.Completado };
+            Venta E2v4 = new Venta() { Fecha = new DateTime(2021, 10, 25), Estado = EstadoVenta.Completado };
+            Venta E2v5 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = EstadoVenta.Completado };
+            Venta E2v6 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = EstadoVenta.Completado };
+            Venta E2v7 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = EstadoVenta.Completado };
+            Venta E2v8 = new Venta() { Fecha = new DateTime(2021, 10, 21), Estado = EstadoVenta.Completado };
+            Venta E2v9 = new Venta() { Fecha = new DateTime(2021, 10, 18), Estado = EstadoVenta.Completado };
+            Venta E2v10 = new Venta() { Fecha = new DateTime(2021, 12, 26), Estado = EstadoVenta.Completado };
+            Venta E2v11 = new Venta() { Fecha = new DateTime(2021, 10, 2), Estado = EstadoVenta.Completado };
+            Venta E2v12 = new Venta() { Fecha = new DateTime(2021, 12, 9), Estado = EstadoVenta.Completado };
+            Venta E2v13 = new Venta() { Fecha = new DateTime(2021, 11, 19), Estado = EstadoVenta.Completado };
+            Venta E2v14 = new Venta() { Fecha = new DateTime(2021, 12, 3), Estado = EstadoVenta.Completado };
+            Venta E2v15 = new Venta() { Fecha = new DateTime(2021, 10, 26), Estado = EstadoVenta.Completado };
+            Venta E2v16 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = EstadoVenta.Completado };
+            Venta E2v17 = new Venta() { Fecha = new DateTime(2021, 10, 19), Estado = EstadoVenta.Completado };
+            Venta E2v18 = new Venta() { Fecha = new DateTime(2021, 11, 23), Estado = EstadoVenta.Completado };
+            Venta E2v19 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = EstadoVenta.Completado };
+            Venta E2v20 = new Venta() { Fecha = new DateTime(2021, 11, 22), Estado = EstadoVenta.Completado };
+            Venta E2v21 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = EstadoVenta.Completado };
+            Venta E2v22 = new Venta() { Fecha = new DateTime(2021, 11, 5), Estado = EstadoVenta.Completado };
+            Venta E2v23 = new Venta() { Fecha = new DateTime(2021, 10, 18), Estado = EstadoVenta.Completado };
+            Venta E2v24 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = EstadoVenta.Completado };
+            Venta E2v25 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = EstadoVenta.Completado };
+            Venta E2v26 = new Venta() { Fecha = new DateTime(2021, 12, 26), Estado = EstadoVenta.Completado };
+            Venta E2v27 = new Venta() { Fecha = new DateTime(2021, 11, 26), Estado = EstadoVenta.Completado };
+            Venta E2v28 = new Venta() { Fecha = new DateTime(2021, 11, 27), Estado = EstadoVenta.Completado };
+            Venta E2v29 = new Venta() { Fecha = new DateTime(2021, 11, 4), Estado = EstadoVenta.Completado };
+            Venta E2v30 = new Venta() { Fecha = new DateTime(2021, 11, 18), Estado = EstadoVenta.Completado };
 
 
             //Permisos
@@ -445,36 +445,36 @@ namespace CargaDatos
             Biometrico E3dia90 = new Biometrico() { Entrada = new DateTime(2021, 12, 29, 8, 7, 21), Salida = new DateTime(2021, 12, 29, 12, 0, 30), Fecha = new DateTime(2021, 12, 29), };
 
             //VENTAS
-            Venta E3v1 = new Venta() { Fecha = new DateTime(2021, 11, 25), Estado = "Completado" };
-            Venta E3v2 = new Venta() { Fecha = new DateTime(2021, 10, 1), Estado = "Completado" };
-            Venta E3v3 = new Venta() { Fecha = new DateTime(2021, 11, 14), Estado = "Completado" };
-            Venta E3v4 = new Venta() { Fecha = new DateTime(2021, 10, 11), Estado = "Completado" };
-            Venta E3v5 = new Venta() { Fecha = new DateTime(2021, 11, 28), Estado = "Completado" };
-            Venta E3v6 = new Venta() { Fecha = new DateTime(2021, 10, 30), Estado = "Completado" };
-            Venta E3v7 = new Venta() { Fecha = new DateTime(2021, 12, 24), Estado = "Completado" };
-            Venta E3v8 = new Venta() { Fecha = new DateTime(2021, 12, 10), Estado = "Completado" };
-            Venta E3v9 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = "Completado" };
-            Venta E3v10 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = "Completado" };
-            Venta E3v11 = new Venta() { Fecha = new DateTime(2021, 10, 12), Estado = "Completado" };
-            Venta E3v12 = new Venta() { Fecha = new DateTime(2021, 10, 22), Estado = "Completado" };
-            Venta E3v13 = new Venta() { Fecha = new DateTime(2021, 11, 24), Estado = "Completado" };
-            Venta E3v14 = new Venta() { Fecha = new DateTime(2021, 11, 30), Estado = "Completado" };
-            Venta E3v15 = new Venta() { Fecha = new DateTime(2021, 11, 17), Estado = "Completado" };
-            Venta E3v16 = new Venta() { Fecha = new DateTime(2021, 12, 23), Estado = "Completado" };
-            Venta E3v17 = new Venta() { Fecha = new DateTime(2021, 12, 30), Estado = "Completado" };
-            Venta E3v18 = new Venta() { Fecha = new DateTime(2021, 12, 17), Estado = "Completado" };
-            Venta E3v19 = new Venta() { Fecha = new DateTime(2021, 11, 9), Estado = "Completado" };
-            Venta E3v20 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = "Completado" };
-            Venta E3v21 = new Venta() { Fecha = new DateTime(2021, 11, 3), Estado = "Completado" };
-            Venta E3v22 = new Venta() { Fecha = new DateTime(2021, 12, 21), Estado = "Completado" };
-            Venta E3v23 = new Venta() { Fecha = new DateTime(2021, 10, 16), Estado = "Completado" };
-            Venta E3v24 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = "Completado" };
-            Venta E3v25 = new Venta() { Fecha = new DateTime(2021, 11, 24), Estado = "Completado" };
-            Venta E3v26 = new Venta() { Fecha = new DateTime(2021, 11, 13), Estado = "Completado" };
-            Venta E3v27 = new Venta() { Fecha = new DateTime(2021, 12, 23), Estado = "Completado" };
-            Venta E3v28 = new Venta() { Fecha = new DateTime(2021, 12, 26), Estado = "Completado" };
-            Venta E3v29 = new Venta() { Fecha = new DateTime(2021, 10, 9), Estado = "Completado" };
-            Venta E3v30 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = "Completado" };
+            Venta E3v1 = new Venta() { Fecha = new DateTime(2021, 11, 25), Estado = EstadoVenta.Completado };
+            Venta E3v2 = new Venta() { Fecha = new DateTime(2021, 10, 1), Estado = EstadoVenta.Completado };
+            Venta E3v3 = new Venta() { Fecha = new DateTime(2021, 11, 14), Estado = EstadoVenta.Completado };
+            Venta E3v4 = new Venta() { Fecha = new DateTime(2021, 10, 11), Estado = EstadoVenta.Completado };
+            Venta E3v5 = new Venta() { Fecha = new DateTime(2021, 11, 28), Estado = EstadoVenta.Completado };
+            Venta E3v6 = new Venta() { Fecha = new DateTime(2021, 10, 30), Estado = EstadoVenta.Completado };
+            Venta E3v7 = new Venta() { Fecha = new DateTime(2021, 12, 24), Estado = EstadoVenta.Completado };
+            Venta E3v8 = new Venta() { Fecha = new DateTime(2021, 12, 10), Estado = EstadoVenta.Completado };
+            Venta E3v9 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = EstadoVenta.Completado };
+            Venta E3v10 = new Venta() { Fecha = new DateTime(2021, 11, 20), Estado = EstadoVenta.Completado };
+            Venta E3v11 = new Venta() { Fecha = new DateTime(2021, 10, 12), Estado = EstadoVenta.Completado };
+            Venta E3v12 = new Venta() { Fecha = new DateTime(2021, 10, 22), Estado = EstadoVenta.Completado };
+            Venta E3v13 = new Venta() { Fecha = new DateTime(2021, 11, 24), Estado = EstadoVenta.Completado };
+            Venta E3v14 = new Venta() { Fecha = new DateTime(2021, 11, 30), Estado = EstadoVenta.Completado };
+            Venta E3v15 = new Venta() { Fecha = new DateTime(2021, 11, 17), Estado = EstadoVenta.Completado };
+            Venta E3v16 = new Venta() { Fecha = new DateTime(2021, 12, 23), Estado = EstadoVenta.Completado };
+            Venta E3v17 = new Venta() { Fecha = new DateTime(2021, 12, 30), Estado = EstadoVenta.Completado };
+            Venta E3v18 = new Venta() { Fecha = new DateTime(2021, 12, 17), Estado = EstadoVenta.Completado };
+            Venta E3v19 = new Venta() { Fecha = new DateTime(2021, 11, 9), Estado = EstadoVenta.Completado };
+            Venta E3v20 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = EstadoVenta.Completado };
+            Venta E3v21 = new Venta() { Fecha = new DateTime(2021, 11, 3), Estado = EstadoVenta.Completado };
+            Venta E3v22 = new Venta() { Fecha = new DateTime(2021, 12, 21), Estado = EstadoVenta.Completado };
+            Venta E3v23 = new Venta() { Fecha = new DateTime(2021, 10, 16), Estado = EstadoVenta.Completado };
+            Venta E3v24 = new Venta() { Fecha = new DateTime(2021, 10, 13), Estado = EstadoVenta.Completado };
+            Venta E3v25 = new Venta() { Fecha = new DateTime(2021, 11, 24), Estado = EstadoVenta.Completado };
+            Venta E3v26 = new Venta() { Fecha = new DateTime(2021, 11, 13), Estado = EstadoVenta.Completado };
+            Venta E3v27 = new Venta() { Fecha = new DateTime(2021, 12, 23), Estado = EstadoVenta.Completado };
+            Venta E3v28 = new Venta() { Fecha = new DateTime(2021, 12, 26), Estado = EstadoVenta.Completado };
+            Venta E3v29 = new Venta() { Fecha = new DateTime(2021, 10, 9), Estado = EstadoVenta.Completado };
+            Venta E3v30 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = EstadoVenta.Completado };
 
 
             Empleado Empleado3 = new Empleado()
@@ -605,36 +605,36 @@ namespace CargaDatos
             Biometrico E4dia90 = new Biometrico() { Entrada = new DateTime(2021, 12, 29, 8, 3, 14), Salida = new DateTime(2021, 12, 29, 12, 3, 52), Fecha = new DateTime(2021, 12, 29), };
 
             //VENTAS
-            Venta E4v1 = new Venta() { Fecha = new DateTime(2021, 12, 15), Estado = "Completado" };
-            Venta E4v2 = new Venta() { Fecha = new DateTime(2021, 11, 21), Estado = "Completado" };
-            Venta E4v3 = new Venta() { Fecha = new DateTime(2021, 12, 20), Estado = "Completado" };
-            Venta E4v4 = new Venta() { Fecha = new DateTime(2021, 10, 29), Estado = "Completado" };
-            Venta E4v5 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = "Completado" };
-            Venta E4v6 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = "Completado" };
-            Venta E4v7 = new Venta() { Fecha = new DateTime(2021, 10, 28), Estado = "Completado" };
-            Venta E4v8 = new Venta() { Fecha = new DateTime(2021, 11, 16), Estado = "Completado" };
-            Venta E4v9 = new Venta() { Fecha = new DateTime(2021, 12, 4), Estado = "Completado" };
-            Venta E4v10 = new Venta() { Fecha = new DateTime(2021, 12, 28), Estado = "Completado" };
-            Venta E4v11 = new Venta() { Fecha = new DateTime(2021, 10, 3), Estado = "Completado" };
-            Venta E4v12 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = "Completado" };
-            Venta E4v13 = new Venta() { Fecha = new DateTime(2021, 10, 22), Estado = "Completado" };
-            Venta E4v14 = new Venta() { Fecha = new DateTime(2021, 10, 18), Estado = "Completado" };
-            Venta E4v15 = new Venta() { Fecha = new DateTime(2021, 11, 8), Estado = "Completado" };
-            Venta E4v16 = new Venta() { Fecha = new DateTime(2021, 10, 24), Estado = "Completado" };
-            Venta E4v17 = new Venta() { Fecha = new DateTime(2021, 12, 8), Estado = "Completado" };
-            Venta E4v18 = new Venta() { Fecha = new DateTime(2021, 11, 21), Estado = "Completado" };
-            Venta E4v19 = new Venta() { Fecha = new DateTime(2021, 12, 29), Estado = "Completado" };
-            Venta E4v20 = new Venta() { Fecha = new DateTime(2021, 10, 23), Estado = "Completado" };
-            Venta E4v21 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = "Completado" };
-            Venta E4v22 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = "Completado" };
-            Venta E4v23 = new Venta() { Fecha = new DateTime(2021, 11, 29), Estado = "Completado" };
-            Venta E4v24 = new Venta() { Fecha = new DateTime(2021, 12, 8), Estado = "Completado" };
-            Venta E4v25 = new Venta() { Fecha = new DateTime(2021, 11, 6), Estado = "Completado" };
-            Venta E4v26 = new Venta() { Fecha = new DateTime(2021, 12, 25), Estado = "Completado" };
-            Venta E4v27 = new Venta() { Fecha = new DateTime(2021, 12, 22), Estado = "Completado" };
-            Venta E4v28 = new Venta() { Fecha = new DateTime(2021, 10, 27), Estado = "Completado" };
-            Venta E4v29 = new Venta() { Fecha = new DateTime(2021, 12, 22), Estado = "Completado" };
-            Venta E4v30 = new Venta() { Fecha = new DateTime(2021, 10, 23), Estado = "Completado" };
+            Venta E4v1 = new Venta() { Fecha = new DateTime(2021, 12, 15), Estado = EstadoVenta.Completado };
+            Venta E4v2 = new Venta() { Fecha = new DateTime(2021, 11, 21), Estado = EstadoVenta.Completado };
+            Venta E4v3 = new Venta() { Fecha = new DateTime(2021, 12, 20), Estado = EstadoVenta.Completado };
+            Venta E4v4 = new Venta() { Fecha = new DateTime(2021, 10, 29), Estado = EstadoVenta.Completado };
+            Venta E4v5 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = EstadoVenta.Completado };
+            Venta E4v6 = new Venta() { Fecha = new DateTime(2021, 12, 27), Estado = EstadoVenta.Completado };
+            Venta E4v7 = new Venta() { Fecha = new DateTime(2021, 10, 28), Estado = EstadoVenta.Completado };
+            Venta E4v8 = new Venta() { Fecha = new DateTime(2021, 11, 16), Estado = EstadoVenta.Completado };
+            Venta E4v9 = new Venta() { Fecha = new DateTime(2021, 12, 4), Estado = EstadoVenta.Completado };
+            Venta E4v10 = new Venta() { Fecha = new DateTime(2021, 12, 28), Estado = EstadoVenta.Completado };
+            Venta E4v11 = new Venta() { Fecha = new DateTime(2021, 10, 3), Estado = EstadoVenta.Completado };
+            Venta E4v12 = new Venta() { Fecha = new DateTime(2021, 12, 7), Estado = EstadoVenta.Completado };
+            Venta E4v13 = new Venta() { Fecha = new DateTime(2021, 10, 22), Estado = EstadoVenta.Completado };
+            Venta E4v14 = new Venta() { Fecha = new DateTime(2021, 10, 18), Estado = EstadoVenta.Completado };
+            Venta E4v15 = new Venta() { Fecha = new DateTime(2021, 11, 8), Estado = EstadoVenta.Completado };
+            Venta E4v16 = new Venta() { Fecha = new DateTime(2021, 10, 24), Estado = EstadoVenta.Completado };
+            Venta E4v17 = new Venta() { Fecha = new DateTime(2021, 12, 8), Estado = EstadoVenta.Completado };
+            Venta E4v18 = new Venta() { Fecha = new DateTime(2021, 11, 21), Estado = EstadoVenta.Completado };
+            Venta E4v19 = new Venta() { Fecha = new DateTime(2021, 12, 29), Estado = EstadoVenta.Completado };
+            Venta E4v20 = new Venta() { Fecha = new DateTime(2021, 10, 23), Estado = EstadoVenta.Completado };
+            Venta E4v21 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = EstadoVenta.Completado };
+            Venta E4v22 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = EstadoVenta.Completado };
+            Venta E4v23 = new Venta() { Fecha = new DateTime(2021, 11, 29), Estado = EstadoVenta.Completado };
+            Venta E4v24 = new Venta() { Fecha = new DateTime(2021, 12, 8), Estado = EstadoVenta.Completado };
+            Venta E4v25 = new Venta() { Fecha = new DateTime(2021, 11, 6), Estado = EstadoVenta.Completado };
+            Venta E4v26 = new Venta() { Fecha = new DateTime(2021, 12, 25), Estado = EstadoVenta.Completado };
+            Venta E4v27 = new Venta() { Fecha = new DateTime(2021, 12, 22), Estado = EstadoVenta.Completado };
+            Venta E4v28 = new Venta() { Fecha = new DateTime(2021, 10, 27), Estado = EstadoVenta.Completado };
+            Venta E4v29 = new Venta() { Fecha = new DateTime(2021, 12, 22), Estado = EstadoVenta.Completado };
+            Venta E4v30 = new Venta() { Fecha = new DateTime(2021, 10, 23), Estado = EstadoVenta.Completado };
 
             Empleado Empleado4 = new Empleado()
             {
