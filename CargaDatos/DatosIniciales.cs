@@ -170,14 +170,14 @@ namespace CargaDatos
                 },
                 Implemento = new Implemento()
                 {
-                    Estado = "Excelente",
+                    Estado = EstadoImplemento.Excelente,
                     Observacion = "Implementos de trabajo en buen estado"
                 },
 
                 Evaluacion = new Evaluacion()
                 {
                     Fecha = new DateTime(2022, 01, 05),
-                    Calificacion = "Buena"
+                    Calificacion = Calificacion.Buena
                 }
             };
 
@@ -339,14 +339,14 @@ namespace CargaDatos
                 },
                 Implemento = new Implemento()
                 {
-                    Estado = "Excelente",
+                    Estado = EstadoImplemento.Excelente,
                     Observacion = "Implementos de trabajo en buen estado"
                 },
 
                 Evaluacion = new Evaluacion()
                 {
                     Fecha = new DateTime(2022, 01, 05),
-                    Calificacion = "Buena"
+                    Calificacion = Calificacion.Buena
                 }
             };
 
@@ -500,14 +500,14 @@ namespace CargaDatos
                 },
                 Implemento = new Implemento()
                 {
-                    Estado = "Excelente",
+                    Estado = EstadoImplemento.Excelente,
                     Observacion = "Implementos de trabajo en buen estado"
                 },
 
                 Evaluacion = new Evaluacion()
                 {
                     Fecha = new DateTime(2022, 01, 05),
-                    Calificacion = "Buena"
+                    Calificacion = Calificacion.Buena
                 }
             };
 
@@ -659,14 +659,14 @@ namespace CargaDatos
                 },
                 Implemento = new Implemento()
                 {
-                    Estado = "Excelente",
+                    Estado = EstadoImplemento.Excelente,
                     Observacion = "Implementos de trabajo en buen estado"
                 },
 
                 Evaluacion = new Evaluacion()
                 {
                     Fecha = new DateTime(2022, 01, 05),
-                    Calificacion = "Mala"
+                    Calificacion = Calificacion.Excelente
                 }
             };
 
@@ -707,7 +707,7 @@ namespace CargaDatos
             };
             Capacitacion Capacitacion5 = new Capacitacion()
             {
-                Tema = "Nuevois Prodductos",
+                Tema = "Nuevos Productos",
                 Fecha = new DateTime(2021, 11, 29, 13, 21, 59),
 
             };

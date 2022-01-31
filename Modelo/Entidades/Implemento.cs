@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Modelo.Entidades
 {
+    public enum EstadoImplemento { Excelente, Bueno, Mala }
+
     public class Implemento
     {
          public int ImplementoId { get; set; }
-        public String Estado { get; set; }
+        public EstadoImplemento Estado { get; set; }
         public String Observacion { get; set; }
 
         public int EmpleadoId { get; set; }

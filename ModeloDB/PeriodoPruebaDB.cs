@@ -1,10 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Modelo.Entidades;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ModeloDB
 {
@@ -13,12 +10,19 @@ namespace ModeloDB
     {
 
         //Constructor invoca constructor del padre
-        public PeriodoPruebaDB(DbContextOptions<PeriodoPruebaDB> options)
-        : base(options)
+        public PeriodoPruebaDB(DbContextOptions options)
+            :base(options)
         {
 
         }
-        
+
+        // Se asegura el borrado y la creación de la base de datos
+        public void PreparaDB()
+        {
+            Database.EnsureDeleted();
+            Database.EnsureCreated();
+        }
+
         //Declaración entidades del modelo DB
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Biometrico> Biometricos { get; set; }
@@ -27,29 +31,30 @@ namespace ModeloDB
         public DbSet<Implemento> Implementos { get; set; }
         public DbSet<Permiso> Permisos { get; set; }
         public DbSet<Venta> Ventas { get; set; }
-        public DbSet<Capacitacion> Capacitaciones  { get; set; }
-        public DbSet<CapacitacionAsistencia> CapacitacionAsistencias  { get; set; }
+        public DbSet<Capacitacion> Capacitaciones { get; set; }
+        public DbSet<CapacitacionAsistencia> CapacitacionAsistencias { get; set; }
 
-        
+
         //configuración de la conexion
+        /*
         override protected void OnConfiguring(DbContextOptionsBuilder options)
         {
-            /*
+
             //Linea concexion SQL SERVER
             string conSQLServer = "server = ABEL-ASAA\\SQLEXPRESS; Initial Catalog = PeriodoPrueba; trusted_connection=true;";
 
             //Conexion con sql server
             options.UseSqlServer(conSQLServer);
-            */
-        }
-        
 
+        }
+
+        */
         //configuracion modelo de objetos
         protected override void OnModelCreating(ModelBuilder model)
         {
             //Clase COnfiguracion sin PK
             model.Entity<Configuracion>()
-                .HasNoKey();
+                .HasKey(configuracion => configuracion.EmpresaNombre);
 
             //Relaciones 1 a muchos
             //cardinalidad biometricos empleados
@@ -90,7 +95,7 @@ namespace ModeloDB
               .HasOne(capacitacionasistencia => capacitacionasistencia.Capacitacion)
               .WithMany(capacitacion => capacitacion.CapacitacionAsistencias)
               .HasForeignKey(capacitacionasistencia => capacitacionasistencia.CapacitacionId);
-            
+
 
             //-Empleado
             model.Entity<CapacitacionAsistencia>()
@@ -102,7 +107,7 @@ namespace ModeloDB
             model.Entity<CapacitacionAsistencia>()
              .HasKey(capacitacionasistencia => new { capacitacionasistencia.CapacitacionId, capacitacionasistencia.EmpleadoId });
 
-           
+
         }
     }
 }

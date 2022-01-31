@@ -25,17 +25,20 @@ namespace AppConsola
             var listaConfiguracion = (List<Configuracion>)listas[ListasTipo.Configuracion];
 
 
-            //Grabar
-            PeriodoPruebaDB db = new PeriodoPruebaDB();
+            using (PeriodoPruebaDB db = PeriodoPruebaDBBuilder.Crear())
+            {
+                // Se asegura que se borre y vuelva a crear la base de datos
+                db.PreparaDB();
+                // Agrega los listados
+                db.Empleados.AddRange(listaEmpleados);
+                db.Capacitaciones.AddRange(listaCapacitaciones);
+                db.CapacitacionAsistencias.AddRange(listaCapacitacionAsitencia);
+                db.Configuraciones.AddRange(listaConfiguracion);
+                // Guarda todos los datos
+                db.SaveChanges();
+            }
 
-            db.Empleados.AddRange(listaEmpleados);
-            db.Capacitaciones.AddRange(listaCapacitaciones);
-            db.CapacitacionAsistencias.AddRange(listaCapacitacionAsitencia);
-            db.Configuraciones.AddRange(listaConfiguracion);
-
-
-
-            db.SaveChanges();
+            
         }
     }
 }

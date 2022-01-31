@@ -55,7 +55,7 @@
                     <td>@biometrico.Empleado.Nombre</td>
                     <td>@biometrico.Entrada</td>
                     <td>@biometrico.Salida</td>
-                    <td>@biometrico.Fecha</td>
+                    <td>@biometrico.Fecha.ToShortDateString()</td>
                     <td>
                         <a asp-controller="Biometricos" asp-action="Edit" asp-route-id="@biometrico.BiometricoId" class="btn btn-primary">Editar</a>
                         <a asp-controller="Biometricos" asp-action="Delete" asp-route-id="@biometrico.BiometricoId" class="btn btn-danger">Eliminar</a>
