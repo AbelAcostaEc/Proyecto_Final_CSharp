@@ -24,9 +24,13 @@
                 </div>
                 <div class="form-group">
                     <label class="custom-control-label">Calificación: </label>
-                    <input class="form-control" maxlength="10" type="text" asp-for="Calificacion" />
+                    <select class="form-control"
+                            asp-for="Calificacion" asp-items="Html.GetEnumSelectList<Calificacion>()">
+                    </select>
                 </div>
+                
                 <input class="form-control" type="hidden" value="17" asp-for="EmpleadoId" />
+                
 
                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Crear Evaluacion" />

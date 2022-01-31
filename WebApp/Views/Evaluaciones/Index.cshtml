@@ -49,7 +49,7 @@
                 <tr>
                     <td>@evaluacion.EvaluacionId</td>
                     <td>@evaluacion.Empleado.Nombre</td>
-                    <td>@evaluacion.Fecha</td>
+                    <td>@evaluacion.Fecha.ToShortDateString()</td>
                     <td>@evaluacion.Calificacion</td>
                     <td>
                         <a asp-controller="Evaluaciones" asp-action="Edit" asp-route-id="@evaluacion.EvaluacionId" class="btn btn-primary">Editar</a>

@@ -50,7 +50,7 @@
                 <tr>
                     <td>@venta.VentaId</td>
                     <td>@venta.Empleado.Nombre</td>
-                    <td>@venta.Fecha</td>
+                    <td>@venta.Fecha.ToShortDateString()</td>
                     <td>@venta.Estado</td>
                     <td>
                         <a asp-controller="Ventas" asp-action="Edit" asp-route-id="@venta.VentaId" class="btn btn-primary">Editar</a>
