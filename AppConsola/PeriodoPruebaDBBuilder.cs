@@ -30,6 +30,11 @@ namespace AppConsola
                         .UseNpgsql(conn)
                         .Options;
                     break;
+                case "Mysql":
+                    contextOptions = new DbContextOptionsBuilder<PeriodoPruebaDB>()
+                        .UseMySQL(conn)
+                        .Options;
+                    break;
                 default: // Por defecto usa la memoria como base de datos
                     contextOptions = new DbContextOptionsBuilder<PeriodoPruebaDB>()
                         .UseInMemoryDatabase(conn)
