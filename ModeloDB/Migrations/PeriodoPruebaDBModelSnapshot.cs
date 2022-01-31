@@ -78,6 +78,23 @@ namespace ModeloDB.Migrations
                     b.ToTable("CapacitacionAsistencias");
                 });
 
+            modelBuilder.Entity("Modelo.Entidades.Configuracion", b =>
+                {
+                    b.Property<int>("DiasMinimos")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EmpresaNombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HorasTotales")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VentasMinimo")
+                        .HasColumnType("int");
+
+                    b.ToTable("Configuraciones");
+                });
+
             modelBuilder.Entity("Modelo.Entidades.Empleado", b =>
                 {
                     b.Property<int>("EmpleadoId")

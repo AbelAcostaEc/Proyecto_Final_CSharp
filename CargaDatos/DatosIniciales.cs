@@ -12,7 +12,7 @@ namespace CargaDatos
 
         public enum ListasTipo
         {
-            Empleados,AsistenciaCapacitacion,Capacitaciones
+            Empleados,AsistenciaCapacitacion,Capacitaciones,Configuracion
         }
 
         public Dictionary<ListasTipo, object> Carga()
@@ -311,9 +311,9 @@ namespace CargaDatos
             //Permisos
             Permiso Permiso1E2 = new Permiso()
             {
-                Fecha=new DateTime(2021,12,18),
-                Inicio= new DateTime(2021, 12, 18,8,1,29),
-                Fin= new DateTime(2021, 12, 18,12,0,0)
+                Fecha = new DateTime(2021, 12, 18),
+                Inicio = new DateTime(2021, 12, 18, 8, 1, 29),
+                Fin = new DateTime(2021, 12, 18, 12, 0, 0)
             };
 
             Empleado Empleado2 = new Empleado()
@@ -332,7 +332,7 @@ namespace CargaDatos
                                                        E2dia71,E2dia72,E2dia73,E2dia74,E2dia75,E2dia76,E2dia77,E2dia78,E2dia80,
                                                        E2dia81,E2dia82,E2dia83,E2dia84,E2dia85,E2dia86,E2dia87,E2dia88,E2dia89,E2dia90
                 },
-                Permisos = new List<Permiso>() { Permiso1E2},
+                Permisos = new List<Permiso>() { Permiso1E2 },
                 Ventas = new List<Venta>() { E2v1, E2v2,E2v3,E2v4,E2v5,E2v6,E2v7,E2v8,E2v9,E2v10,
                                              E2v11, E2v12,E2v13,E2v14,E2v15,E2v16,E2v17,E2v18,E2v19,E2v20,
                                              E2v21, E2v22,E2v23,E2v24,E2v25,E2v26,E2v27,E2v28,E2v29,E2v30,
@@ -842,6 +842,18 @@ namespace CargaDatos
                 CapE4As1,CapE4As2,CapE4As4,CapE4As5,
 
             };
+
+             Configuracion config = new Configuracion()
+            {
+                DiasMinimos = 90,
+                EmpresaNombre = "Empresa ASAA",
+                HorasTotales = 360,
+                VentasMinimo = 30
+            };
+            List<Configuracion> listaConfiguracion = new List<Configuracion>() { config };
+
+
+
             //PeriodoPruebaDB repos = new PeriodoPruebaDB();
             //repos.Empleados.Add(Empleado1);
             //repos.SaveChanges();
@@ -855,8 +867,11 @@ namespace CargaDatos
             {
                 { ListasTipo.AsistenciaCapacitacion, listaCapacitacionAsistencias  },
                 { ListasTipo.Empleados, listaEmpleados },
-                { ListasTipo.Capacitaciones, listaCapacitacion }
-               
+                { ListasTipo.Capacitaciones, listaCapacitacion },
+                { ListasTipo.Configuracion, listaConfiguracion }
+
+
+
             };
 
             return dicListasDatos;

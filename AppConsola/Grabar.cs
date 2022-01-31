@@ -22,7 +22,7 @@ namespace AppConsola
             var listaEmpleados = (List<Empleado>)listas[ListasTipo.Empleados];
             var listaCapacitaciones = (List<Capacitacion>)listas[ListasTipo.Capacitaciones];
             var listaCapacitacionAsitencia = (List<CapacitacionAsistencia>)listas[ListasTipo.AsistenciaCapacitacion];
-
+            var listaConfiguracion = (List<Configuracion>)listas[ListasTipo.Configuracion];
 
 
             //Grabar
@@ -31,7 +31,9 @@ namespace AppConsola
             db.Empleados.AddRange(listaEmpleados);
             db.Capacitaciones.AddRange(listaCapacitaciones);
             db.CapacitacionAsistencias.AddRange(listaCapacitacionAsitencia);
-            
+            db.Configuraciones.AddRange(listaConfiguracion);
+
+
 
             db.SaveChanges();
         }

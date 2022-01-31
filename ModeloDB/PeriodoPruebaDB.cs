@@ -18,10 +18,11 @@ namespace ModeloDB
         {
 
         }
-
+        
         //Declaración entidades del modelo DB
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Biometrico> Biometricos { get; set; }
+        public DbSet<Configuracion> Configuraciones { get; set; }
         public DbSet<Evaluacion> Evaluaciones { get; set; }
         public DbSet<Implemento> Implementos { get; set; }
         public DbSet<Permiso> Permisos { get; set; }
@@ -29,22 +30,27 @@ namespace ModeloDB
         public DbSet<Capacitacion> Capacitaciones  { get; set; }
         public DbSet<CapacitacionAsistencia> CapacitacionAsistencias  { get; set; }
 
-        /*
+        
         //configuración de la conexion
         override protected void OnConfiguring(DbContextOptionsBuilder options)
         {
+            /*
             //Linea concexion SQL SERVER
             string conSQLServer = "server = ABEL-ASAA\\SQLEXPRESS; Initial Catalog = PeriodoPrueba; trusted_connection=true;";
 
             //Conexion con sql server
             options.UseSqlServer(conSQLServer);
-
+            */
         }
-        */
+        
 
         //configuracion modelo de objetos
         protected override void OnModelCreating(ModelBuilder model)
         {
+            //Clase COnfiguracion sin PK
+            model.Entity<Configuracion>()
+                .HasNoKey();
+
             //Relaciones 1 a muchos
             //cardinalidad biometricos empleados
             model.Entity<Biometrico>()
@@ -95,6 +101,8 @@ namespace ModeloDB
             //clave primaria formada por 2 foraneas
             model.Entity<CapacitacionAsistencia>()
              .HasKey(capacitacionasistencia => new { capacitacionasistencia.CapacitacionId, capacitacionasistencia.EmpleadoId });
+
+           
         }
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ModeloDB.Migrations
 {
-    public partial class DbInicial : Migration
+    public partial class DbIncial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,6 +19,19 @@ namespace ModeloDB.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Capacitaciones", x => x.CapacitacionId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Configuraciones",
+                columns: table => new
+                {
+                    HorasTotales = table.Column<int>(type: "int", nullable: false),
+                    EmpresaNombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DiasMinimos = table.Column<int>(type: "int", nullable: false),
+                    VentasMinimo = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
                 });
 
             migrationBuilder.CreateTable(
@@ -208,6 +221,9 @@ namespace ModeloDB.Migrations
 
             migrationBuilder.DropTable(
                 name: "CapacitacionAsistencias");
+
+            migrationBuilder.DropTable(
+                name: "Configuraciones");
 
             migrationBuilder.DropTable(
                 name: "Evaluaciones");

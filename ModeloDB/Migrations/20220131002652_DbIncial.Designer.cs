@@ -10,8 +10,8 @@ using ModeloDB;
 namespace ModeloDB.Migrations
 {
     [DbContext(typeof(PeriodoPruebaDB))]
-    [Migration("20220127001520_DbInicial")]
-    partial class DbInicial
+    [Migration("20220131002652_DbIncial")]
+    partial class DbIncial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -78,6 +78,23 @@ namespace ModeloDB.Migrations
                     b.HasIndex("EmpleadoId");
 
                     b.ToTable("CapacitacionAsistencias");
+                });
+
+            modelBuilder.Entity("Modelo.Entidades.Configuracion", b =>
+                {
+                    b.Property<int>("DiasMinimos")
+                        .HasColumnType("int");
+
+                    b.Property<string>("EmpresaNombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HorasTotales")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VentasMinimo")
+                        .HasColumnType("int");
+
+                    b.ToTable("Configuraciones");
                 });
 
             modelBuilder.Entity("Modelo.Entidades.Empleado", b =>
