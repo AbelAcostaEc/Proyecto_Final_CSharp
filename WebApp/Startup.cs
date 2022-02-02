@@ -24,14 +24,43 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
-            //Añadir servicio dbcontext del modelo
-            services.AddDbContext<PeriodoPruebaDB>(options =>
 
-                options.UseSqlServer("server = ABEL-ASAA\\SQLEXPRESS; Initial Catalog = PeriodoPrueba; trusted_connection=true;")
+            string DBTipo = Configuration["DBTipo"];
+            string DBConnStr = Configuration.GetConnectionString(DBTipo);
+            DbContextOptions<PeriodoPruebaDB> contextOptions;
+
+            switch (DBTipo)
+            {
+                case "SqlServer":
+                    contextOptions = new DbContextOptionsBuilder<PeriodoPruebaDB>()
+                        .UseSqlServer(DBConnStr)
+                        .Options;
+                    break;
+                case "Postgres":
+                    contextOptions = new DbContextOptionsBuilder<PeriodoPruebaDB>()
+                        .UseNpgsql(DBConnStr)
+                        .Options;
+                    break;
+                case "Mysql":
+                    contextOptions = new DbContextOptionsBuilder<PeriodoPruebaDB>()
+                        .UseMySQL(DBConnStr)
+                        .Options;
+                    break;
+                default: // Por defecto usa la memoria como base de datos
+                    contextOptions = new DbContextOptionsBuilder<PeriodoPruebaDB>()
+                        .UseInMemoryDatabase(DBConnStr)
+                        .Options;
+                    break;
+            }
+
+            services.AddDbContext<PeriodoPruebaDB>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("SqlServer")
+                )
             );
+
             services.AddControllersWithViews();
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
