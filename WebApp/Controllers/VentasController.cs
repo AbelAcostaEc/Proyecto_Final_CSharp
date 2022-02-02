@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿    using Microsoft.AspNetCore.Mvc;
 using ModeloDB;
 using Modelo.Entidades;
 using System;
@@ -6,13 +6,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WebApp.Controllers
 {
 
     public class VentasController : Controller
     {
-        private readonly PeriodoPruebaDB db;
+         readonly PeriodoPruebaDB db;
 
         public VentasController(PeriodoPruebaDB db)
         {
@@ -29,7 +30,18 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            //lista empleados
+            var listaEmpleados = db.Empleados
+                .Select(empleado => new
+                {
+                   EmpleadoId= empleado.EmpleadoId,
+                    Nombre=empleado.Nombre
+                }).ToList();
+            //preparar listas
+            var selectListaEmpleados = new SelectList(listaEmpleados, "EmpleadoId", "Nombre");
 
+            //Ingreso Viebag
+            ViewBag.selectListEmpleados=selectListaEmpleados;
             return View();
         }
         [HttpPost]
@@ -47,6 +59,19 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
+            //lista empleados
+            var listaEmpleados = db.Empleados
+                .Select(empleado => new
+                {
+                    EmpleadoId = empleado.EmpleadoId,
+                    Nombre = empleado.Nombre
+                }).ToList();
+            //preparar listas
+            var selectListaEmpleados = new SelectList(listaEmpleados, "EmpleadoId", "Nombre");
+
+            //Ingreso Viebag
+            ViewBag.selectListEmpleados = selectListaEmpleados;
+
             Venta venta = db.Ventas.Find(id);
             return View(venta);
         }
@@ -66,6 +91,18 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
+            //lista empleados
+            var listaEmpleados = db.Empleados
+                .Select(empleado => new
+                {
+                    EmpleadoId = empleado.EmpleadoId,
+                    Nombre = empleado.Nombre
+                }).ToList();
+            //preparar listas
+            var selectListaEmpleados = new SelectList(listaEmpleados, "EmpleadoId", "Nombre");
+
+            //Ingreso Viebag
+            ViewBag.selectListEmpleados = selectListaEmpleados;
             Venta venta = db.Ventas.Find(id);
             return View(venta);
         }

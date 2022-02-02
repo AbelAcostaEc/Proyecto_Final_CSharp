@@ -22,18 +22,24 @@
                 <input type="text" asp-for="BiometricoId" hidden />
 
                 <div class="form-group">
-                    <label class="custom-control-label">Fecha: </label>
+                    <label class="custom-control-label">Hora Entrada: </label>
                     <input class="form-control" type="datetime-local" asp-for="Entrada" />
                 </div>
                 <div class="form-group">
-                    <label class="custom-control-label">Fecha: </label>
+                    <label class="custom-control-label">Hora Salida: </label>
                     <input class="form-control" type="datetime-local" asp-for="Salida" />
                 </div>
                 <div class="form-group">
                     <label class="custom-control-label">Fecha: </label>
                     <input class="form-control" type="date" asp-for="Fecha" />
                 </div>
-                <input type="text" asp-for="EmpleadoId" hidden />
+                <div class="form-group">
+                    <label class="custom-control-label">Empleado: </label>
+                    <select class="form-control"
+                            asp-for="EmpleadoId" asp-items="@ViewBag.selectListEmpleados">
+                        <option value="">--Seleccione un empleado---</option>
+                    </select>
+                </div>
 
                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Actualizar Biometrico" />

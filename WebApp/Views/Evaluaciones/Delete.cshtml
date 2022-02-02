@@ -32,7 +32,13 @@
                             asp-for="Calificacion" asp-items="Html.GetEnumSelectList<Calificacion>()" disabled>
                     </select>
                 </div>
-                <input type="text" asp-for="EmpleadoId" hidden />
+                <div class="form-group">
+                    <label class="custom-control-label">Empleado: </label>
+                    <select class="form-control"
+                            asp-for="EmpleadoId" asp-items="@ViewBag.selectListEmpleados" disabled>
+                        <option value="">--Seleccione un empleado---</option>
+                    </select>
+                </div>
 
 
 

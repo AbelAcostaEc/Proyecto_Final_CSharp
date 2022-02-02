@@ -29,7 +29,13 @@
                     </select>
                 </div>
                 
-                <input class="form-control" type="hidden" value="17" asp-for="EmpleadoId" />
+                <div class="form-group">
+                    <label class="custom-control-label">Empleado: </label>
+                    <select class="form-control"
+                            asp-for="EmpleadoId" asp-items="@ViewBag.selectListEmpleados">
+                        <option value="">--Seleccione un empleado---</option>
+                    </select>
+                </div>
                 
 
                 <div class="form-group">

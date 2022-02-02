@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Modelo.Entidades;
 using ModeloDB;
@@ -26,6 +27,18 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            //lista empleados
+            var listaEmpleados = db.Empleados
+                .Select(empleado => new
+                {
+                    EmpleadoId = empleado.EmpleadoId,
+                    Nombre = empleado.Nombre
+                }).ToList();
+            //preparar listas
+            var selectListaEmpleados = new SelectList(listaEmpleados, "EmpleadoId", "Nombre");
+
+            //Ingreso Viebag
+            ViewBag.selectListEmpleados = selectListaEmpleados;
             return View();
         }
         [HttpPost]
@@ -43,6 +56,18 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
+            //lista empleados
+            var listaEmpleados = db.Empleados
+                .Select(empleado => new
+                {
+                    EmpleadoId = empleado.EmpleadoId,
+                    Nombre = empleado.Nombre
+                }).ToList();
+            //preparar listas
+            var selectListaEmpleados = new SelectList(listaEmpleados, "EmpleadoId", "Nombre");
+
+            //Ingreso Viebag
+            ViewBag.selectListEmpleados = selectListaEmpleados;
             Evaluacion evaluacion = db.Evaluaciones.Find(id);
             return View(evaluacion);
         }
@@ -62,6 +87,18 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
+            //lista empleados
+            var listaEmpleados = db.Empleados
+                .Select(empleado => new
+                {
+                    EmpleadoId = empleado.EmpleadoId,
+                    Nombre = empleado.Nombre
+                }).ToList();
+            //preparar listas
+            var selectListaEmpleados = new SelectList(listaEmpleados, "EmpleadoId", "Nombre");
+
+            //Ingreso Viebag
+            ViewBag.selectListEmpleados = selectListaEmpleados;
             Evaluacion evaluacion = db.Evaluaciones.Find(id);
             return View(evaluacion);
         }

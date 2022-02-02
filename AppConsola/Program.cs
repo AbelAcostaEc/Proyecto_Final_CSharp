@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-
+using System.Linq;
 
 namespace AppConsola
 {
@@ -55,6 +55,22 @@ namespace AppConsola
                         capacitacionAsistencia.Empleado.Nombre + " " +
                         capacitacionAsistencia.Capacitacion.Fecha
                     );
+                }
+
+                //Operacion Proyeccion
+                var listaEmpleadosP = db.Empleados
+                    .Select(empleado=> new
+                    {
+                        empleado.EmpleadoId,
+                        empleado.Nombre
+                    
+                    });
+
+
+                foreach (var empleado in listaEmpleados)
+                   
+                {
+                    Console.Write(empleado.EmpleadoId+ " "+empleado.Nombre);
                 }
 
             }
