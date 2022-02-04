@@ -1,0 +1,57 @@
+﻿@using Modelo.Entidades
+@model Contrato
+
+@{
+    ViewData["Title"] = "Validar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Contrato</h1>
+<p>Validacion contrato de @Model.Empleado.Nombre</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form method="post" asp-action="Validar">
+                <div class="form-group">
+                    <label class="control-label">Contrato Id</label>
+                    <input class="form-control" asp-for="ContratoId" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Empleado</label>
+                    <input class="form-control" asp-for="Empleado.Nombre" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Estado</label>
+                    <input class="form-control" asp-for="Estado" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Validar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-8">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>Evaluacion</td>
+                        <td>Estado Implemento</td>
+                        <td>Dias Laborados</td>
+                        <td>Capacitaciones Asistidas</td>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>@Model.Empleado.Evaluacion.Calificacion</td>
+                        <td>@Model.Empleado.Implemento.Estado</td>
+                        <td>@Model.Empleado.Biometricos.Count()</td>
+
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

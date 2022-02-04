@@ -1,0 +1,62 @@
+﻿@using Modelo.Entidades;
+
+@model IEnumerable<Contrato>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Lista de Contratos</h1>
+<p>A continuación se presenta la lista de Contratos</p>
+
+<div class="container">
+    
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["mensaje"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">
+                    &times;
+                </span>
+            </button>
+        </div>
+    }
+    <div class="row">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Fecha</td>
+                    <td>Cedula</td>
+                    <td>Nombre</td>
+                    <td>Correo</td>
+                    <td>Estado</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Contrato contrato in Model)
+                {
+                <tr>
+                    <td>@contrato.ContratoId</td>
+                    <td>@contrato.Fecha</td>
+                    <td>@contrato.Empleado.Cedula</td>
+                    <td>@contrato.Empleado.Nombre</td>
+                    <td>@contrato.Empleado.Correo</td>
+                    <td>@contrato.Estado</td>
+                    <td>
+                        <a asp-controller="Contratos" asp-action="Validar" asp-route-id="@contrato.ContratoId" class="btn btn-warning">Ver</a>
+                    </td>
+                </tr>
+                }
+
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+

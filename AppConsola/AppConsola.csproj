@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CargaDatos\CargaDatos.csproj" />
     <ProjectReference Include="..\ModeloDB\ModeloDB.csproj" />
+    <ProjectReference Include="..\Procesos\Procesos.csproj" />
   </ItemGroup>
 
 </Project>

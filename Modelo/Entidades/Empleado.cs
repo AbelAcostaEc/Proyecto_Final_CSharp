@@ -24,6 +24,8 @@ namespace Modelo.Entidades
         public List<Venta> Ventas { get; set; }
         //relacion evaluacion
         public Evaluacion Evaluacion { get; set; }
+        //relacion contrato
+        public Contrato Contrato { get; set; }
 
         //relacion implemento
         public Implemento Implemento { get; set; }

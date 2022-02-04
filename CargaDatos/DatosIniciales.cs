@@ -26,12 +26,12 @@ namespace CargaDatos
             Biometrico E1dia4 = new Biometrico() { Entrada = new DateTime(2021, 10, 4, 8, 2, 4), Salida = new DateTime(2021, 10, 4, 12, 3, 15), Fecha = new DateTime(2021, 10, 4), };
             Biometrico E1dia5 = new Biometrico() { Entrada = new DateTime(2021, 10, 5, 8, 0, 48), Salida = new DateTime(2021, 10, 5, 12, 2, 52), Fecha = new DateTime(2021, 10, 5), };
             Biometrico E1dia6 = new Biometrico() { Entrada = new DateTime(2021, 10, 6, 8, 1, 44), Salida = new DateTime(2021, 10, 6, 12, 1, 4), Fecha = new DateTime(2021, 10, 6), };
-            Biometrico E1dia7 = new Biometrico() { Entrada = new DateTime(2021, 10, 7, 8, 7, 40), Salida = new DateTime(2021, 10, 7, 12, 4, 52), Fecha = new DateTime(2021, 10, 7), };
+            Biometrico E1dia7 = new Biometrico() { Entrada = new DateTime(2021, 10, 7, 8, 4, 40), Salida = new DateTime(2021, 10, 7, 12, 4, 52), Fecha = new DateTime(2021, 10, 7), };
             Biometrico E1dia8 = new Biometrico() { Entrada = new DateTime(2021, 10, 8, 8, 3, 52), Salida = new DateTime(2021, 10, 8, 12, 4, 48), Fecha = new DateTime(2021, 10, 8), };
             Biometrico E1dia9 = new Biometrico() { Entrada = new DateTime(2021, 10, 9, 8, 3, 2), Salida = new DateTime(2021, 10, 9, 12, 5, 32), Fecha = new DateTime(2021, 10, 9), };
             Biometrico E1dia10 = new Biometrico() { Entrada = new DateTime(2021, 10, 10, 8, 0, 2), Salida = new DateTime(2021, 10, 10, 12, 5, 36), Fecha = new DateTime(2021, 10, 10), };
             Biometrico E1dia11 = new Biometrico() { Entrada = new DateTime(2021, 10, 11, 8, 5, 17), Salida = new DateTime(2021, 10, 11, 12, 5, 57), Fecha = new DateTime(2021, 10, 11), };
-            Biometrico E1dia12 = new Biometrico() { Entrada = new DateTime(2021, 10, 12, 8, 7, 58), Salida = new DateTime(2021, 10, 12, 12, 0, 0), Fecha = new DateTime(2021, 10, 12), };
+            Biometrico E1dia12 = new Biometrico() { Entrada = new DateTime(2021, 10, 12, 8, 5, 58), Salida = new DateTime(2021, 10, 12, 12, 0, 0), Fecha = new DateTime(2021, 10, 12), };
             Biometrico E1dia13 = new Biometrico() { Entrada = new DateTime(2021, 10, 13, 8, 1, 23), Salida = new DateTime(2021, 10, 13, 12, 5, 45), Fecha = new DateTime(2021, 10, 13), };
             Biometrico E1dia14 = new Biometrico() { Entrada = new DateTime(2021, 10, 14, 8, 2, 46), Salida = new DateTime(2021, 10, 14, 12, 0, 33), Fecha = new DateTime(2021, 10, 14), };
             Biometrico E1dia15 = new Biometrico() { Entrada = new DateTime(2021, 10, 15, 8, 1, 56), Salida = new DateTime(2021, 10, 15, 12, 3, 28), Fecha = new DateTime(2021, 10, 15), };
@@ -40,61 +40,61 @@ namespace CargaDatos
             Biometrico E1dia18 = new Biometrico() { Entrada = new DateTime(2021, 10, 18, 8, 1, 16), Salida = new DateTime(2021, 10, 18, 12, 0, 14), Fecha = new DateTime(2021, 10, 18), };
             Biometrico E1dia19 = new Biometrico() { Entrada = new DateTime(2021, 10, 19, 8, 2, 43), Salida = new DateTime(2021, 10, 19, 12, 1, 39), Fecha = new DateTime(2021, 10, 19), };
             Biometrico E1dia20 = new Biometrico() { Entrada = new DateTime(2021, 10, 20, 8, 3, 28), Salida = new DateTime(2021, 10, 20, 12, 3, 57), Fecha = new DateTime(2021, 10, 20), };
-            Biometrico E1dia21 = new Biometrico() { Entrada = new DateTime(2021, 10, 21, 8, 7, 49), Salida = new DateTime(2021, 10, 21, 12, 2, 48), Fecha = new DateTime(2021, 10, 21), };
-            Biometrico E1dia22 = new Biometrico() { Entrada = new DateTime(2021, 10, 22, 8, 7, 36), Salida = new DateTime(2021, 10, 22, 12, 4, 57), Fecha = new DateTime(2021, 10, 22), };
+            Biometrico E1dia21 = new Biometrico() { Entrada = new DateTime(2021, 10, 21, 8, 5, 49), Salida = new DateTime(2021, 10, 21, 12, 2, 48), Fecha = new DateTime(2021, 10, 21), };
+            Biometrico E1dia22 = new Biometrico() { Entrada = new DateTime(2021, 10, 22, 8, 4, 36), Salida = new DateTime(2021, 10, 22, 12, 4, 57), Fecha = new DateTime(2021, 10, 22), };
             Biometrico E1dia23 = new Biometrico() { Entrada = new DateTime(2021, 10, 23, 8, 1, 38), Salida = new DateTime(2021, 10, 23, 12, 5, 51), Fecha = new DateTime(2021, 10, 23), };
             Biometrico E1dia24 = new Biometrico() { Entrada = new DateTime(2021, 10, 24, 8, 1, 9), Salida = new DateTime(2021, 10, 24, 12, 2, 50), Fecha = new DateTime(2021, 10, 24), };
-            Biometrico E1dia25 = new Biometrico() { Entrada = new DateTime(2021, 10, 25, 8, 7, 35), Salida = new DateTime(2021, 10, 25, 12, 0, 48), Fecha = new DateTime(2021, 10, 25), };
+            Biometrico E1dia25 = new Biometrico() { Entrada = new DateTime(2021, 10, 25, 8, 5, 35), Salida = new DateTime(2021, 10, 25, 12, 0, 48), Fecha = new DateTime(2021, 10, 25), };
             Biometrico E1dia26 = new Biometrico() { Entrada = new DateTime(2021, 10, 26, 8, 0, 40), Salida = new DateTime(2021, 10, 26, 12, 3, 31), Fecha = new DateTime(2021, 10, 26), };
             Biometrico E1dia27 = new Biometrico() { Entrada = new DateTime(2021, 10, 27, 8, 3, 0), Salida = new DateTime(2021, 10, 27, 12, 2, 31), Fecha = new DateTime(2021, 10, 27), };
             Biometrico E1dia28 = new Biometrico() { Entrada = new DateTime(2021, 10, 28, 8, 3, 6), Salida = new DateTime(2021, 10, 28, 12, 2, 40), Fecha = new DateTime(2021, 10, 28), };
-            Biometrico E1dia29 = new Biometrico() { Entrada = new DateTime(2021, 10, 29, 8, 6, 30), Salida = new DateTime(2021, 10, 29, 12, 1, 20), Fecha = new DateTime(2021, 10, 29), };
+            Biometrico E1dia29 = new Biometrico() { Entrada = new DateTime(2021, 10, 29, 8, 4, 30), Salida = new DateTime(2021, 10, 29, 12, 1, 20), Fecha = new DateTime(2021, 10, 29), };
             Biometrico E1dia30 = new Biometrico() { Entrada = new DateTime(2021, 10, 30, 8, 5, 38), Salida = new DateTime(2021, 10, 30, 12, 4, 16), Fecha = new DateTime(2021, 10, 30), };
-            Biometrico E1dia31 = new Biometrico() { Entrada = new DateTime(2021, 10, 31, 8, 6, 8), Salida = new DateTime(2021, 10, 31, 12, 1, 1), Fecha = new DateTime(2021, 10, 31), };
+            Biometrico E1dia31 = new Biometrico() { Entrada = new DateTime(2021, 10, 31, 8, 4, 8), Salida = new DateTime(2021, 10, 31, 12, 1, 1), Fecha = new DateTime(2021, 10, 31), };
             Biometrico E1dia32 = new Biometrico() { Entrada = new DateTime(2021, 11, 1, 8, 2, 7), Salida = new DateTime(2021, 11, 1, 12, 5, 56), Fecha = new DateTime(2021, 11, 1), };
             Biometrico E1dia33 = new Biometrico() { Entrada = new DateTime(2021, 11, 2, 8, 3, 31), Salida = new DateTime(2021, 11, 2, 12, 2, 38), Fecha = new DateTime(2021, 11, 2), };
-            Biometrico E1dia34 = new Biometrico() { Entrada = new DateTime(2021, 11, 3, 8, 6, 36), Salida = new DateTime(2021, 11, 3, 12, 4, 6), Fecha = new DateTime(2021, 11, 3), };
-            Biometrico E1dia35 = new Biometrico() { Entrada = new DateTime(2021, 11, 4, 8, 7, 43), Salida = new DateTime(2021, 11, 4, 12, 3, 44), Fecha = new DateTime(2021, 11, 4), };
+            Biometrico E1dia34 = new Biometrico() { Entrada = new DateTime(2021, 11, 3, 8, 4, 36), Salida = new DateTime(2021, 11, 3, 12, 4, 6), Fecha = new DateTime(2021, 11, 3), };
+            Biometrico E1dia35 = new Biometrico() { Entrada = new DateTime(2021, 11, 4, 8, 4, 43), Salida = new DateTime(2021, 11, 4, 12, 3, 44), Fecha = new DateTime(2021, 11, 4), };
             Biometrico E1dia36 = new Biometrico() { Entrada = new DateTime(2021, 11, 5, 8, 2, 7), Salida = new DateTime(2021, 11, 5, 12, 0, 34), Fecha = new DateTime(2021, 11, 5), };
             Biometrico E1dia37 = new Biometrico() { Entrada = new DateTime(2021, 11, 6, 8, 3, 17), Salida = new DateTime(2021, 11, 6, 12, 3, 34), Fecha = new DateTime(2021, 11, 6), };
             Biometrico E1dia38 = new Biometrico() { Entrada = new DateTime(2021, 11, 7, 8, 4, 3), Salida = new DateTime(2021, 11, 7, 12, 2, 37), Fecha = new DateTime(2021, 11, 7), };
-            Biometrico E1dia39 = new Biometrico() { Entrada = new DateTime(2021, 11, 8, 8, 6, 48), Salida = new DateTime(2021, 11, 8, 12, 1, 55), Fecha = new DateTime(2021, 11, 8), };
+            Biometrico E1dia39 = new Biometrico() { Entrada = new DateTime(2021, 11, 8, 8, 4, 48), Salida = new DateTime(2021, 11, 8, 12, 1, 55), Fecha = new DateTime(2021, 11, 8), };
             Biometrico E1dia40 = new Biometrico() { Entrada = new DateTime(2021, 11, 9, 8, 3, 4), Salida = new DateTime(2021, 11, 9, 12, 4, 30), Fecha = new DateTime(2021, 11, 9), };
             Biometrico E1dia41 = new Biometrico() { Entrada = new DateTime(2021, 11, 10, 8, 4, 12), Salida = new DateTime(2021, 11, 10, 12, 3, 6), Fecha = new DateTime(2021, 11, 10), };
             Biometrico E1dia42 = new Biometrico() { Entrada = new DateTime(2021, 11, 11, 8, 5, 10), Salida = new DateTime(2021, 11, 11, 12, 0, 31), Fecha = new DateTime(2021, 11, 11), };
             Biometrico E1dia43 = new Biometrico() { Entrada = new DateTime(2021, 11, 12, 8, 1, 35), Salida = new DateTime(2021, 11, 12, 12, 3, 55), Fecha = new DateTime(2021, 11, 12), };
             Biometrico E1dia44 = new Biometrico() { Entrada = new DateTime(2021, 11, 13, 8, 2, 11), Salida = new DateTime(2021, 11, 13, 12, 5, 45), Fecha = new DateTime(2021, 11, 13), };
-            Biometrico E1dia45 = new Biometrico() { Entrada = new DateTime(2021, 11, 14, 8, 7, 42), Salida = new DateTime(2021, 11, 14, 12, 2, 47), Fecha = new DateTime(2021, 11, 14), };
+            Biometrico E1dia45 = new Biometrico() { Entrada = new DateTime(2021, 11, 14, 8, 4, 42), Salida = new DateTime(2021, 11, 14, 12, 2, 47), Fecha = new DateTime(2021, 11, 14), };
             Biometrico E1dia46 = new Biometrico() { Entrada = new DateTime(2021, 11, 15, 8, 4, 54), Salida = new DateTime(2021, 11, 15, 12, 4, 20), Fecha = new DateTime(2021, 11, 15), };
             Biometrico E1dia47 = new Biometrico() { Entrada = new DateTime(2021, 11, 16, 8, 0, 7), Salida = new DateTime(2021, 11, 16, 12, 4, 36), Fecha = new DateTime(2021, 11, 16), };
-            Biometrico E1dia48 = new Biometrico() { Entrada = new DateTime(2021, 11, 17, 8, 7, 43), Salida = new DateTime(2021, 11, 17, 12, 3, 23), Fecha = new DateTime(2021, 11, 17), };
-            Biometrico E1dia49 = new Biometrico() { Entrada = new DateTime(2021, 11, 18, 8, 6, 0), Salida = new DateTime(2021, 11, 18, 12, 0, 27), Fecha = new DateTime(2021, 11, 18), };
+            Biometrico E1dia48 = new Biometrico() { Entrada = new DateTime(2021, 11, 17, 8, 3, 43), Salida = new DateTime(2021, 11, 17, 12, 3, 23), Fecha = new DateTime(2021, 11, 17), };
+            Biometrico E1dia49 = new Biometrico() { Entrada = new DateTime(2021, 11, 18, 8, 4, 0), Salida = new DateTime(2021, 11, 18, 12, 0, 27), Fecha = new DateTime(2021, 11, 18), };
             Biometrico E1dia50 = new Biometrico() { Entrada = new DateTime(2021, 11, 19, 8, 0, 27), Salida = new DateTime(2021, 11, 19, 12, 0, 18), Fecha = new DateTime(2021, 11, 19), };
-            Biometrico E1dia51 = new Biometrico() { Entrada = new DateTime(2021, 11, 20, 8, 7, 28), Salida = new DateTime(2021, 11, 20, 12, 0, 7), Fecha = new DateTime(2021, 11, 20), };
+            Biometrico E1dia51 = new Biometrico() { Entrada = new DateTime(2021, 11, 20, 8, 5, 28), Salida = new DateTime(2021, 11, 20, 12, 0, 7), Fecha = new DateTime(2021, 11, 20), };
             Biometrico E1dia52 = new Biometrico() { Entrada = new DateTime(2021, 11, 21, 8, 4, 20), Salida = new DateTime(2021, 11, 21, 12, 0, 57), Fecha = new DateTime(2021, 11, 21), };
-            Biometrico E1dia53 = new Biometrico() { Entrada = new DateTime(2021, 11, 22, 8, 6, 48), Salida = new DateTime(2021, 11, 22, 12, 3, 57), Fecha = new DateTime(2021, 11, 22), };
+            Biometrico E1dia53 = new Biometrico() { Entrada = new DateTime(2021, 11, 22, 8, 4, 48), Salida = new DateTime(2021, 11, 22, 12, 3, 57), Fecha = new DateTime(2021, 11, 22), };
             Biometrico E1dia54 = new Biometrico() { Entrada = new DateTime(2021, 11, 23, 8, 0, 37), Salida = new DateTime(2021, 11, 23, 12, 5, 24), Fecha = new DateTime(2021, 11, 23), };
             Biometrico E1dia55 = new Biometrico() { Entrada = new DateTime(2021, 11, 24, 8, 5, 15), Salida = new DateTime(2021, 11, 24, 12, 5, 39), Fecha = new DateTime(2021, 11, 24), };
-            Biometrico E1dia56 = new Biometrico() { Entrada = new DateTime(2021, 11, 25, 8, 7, 55), Salida = new DateTime(2021, 11, 25, 12, 4, 4), Fecha = new DateTime(2021, 11, 25), };
+            Biometrico E1dia56 = new Biometrico() { Entrada = new DateTime(2021, 11, 25, 8, 4, 55), Salida = new DateTime(2021, 11, 25, 12, 4, 4), Fecha = new DateTime(2021, 11, 25), };
             Biometrico E1dia57 = new Biometrico() { Entrada = new DateTime(2021, 11, 26, 8, 0, 44), Salida = new DateTime(2021, 11, 26, 12, 1, 45), Fecha = new DateTime(2021, 11, 26), };
-            Biometrico E1dia58 = new Biometrico() { Entrada = new DateTime(2021, 11, 27, 8, 6, 22), Salida = new DateTime(2021, 11, 27, 12, 3, 8), Fecha = new DateTime(2021, 11, 27), };
+            Biometrico E1dia58 = new Biometrico() { Entrada = new DateTime(2021, 11, 27, 8, 4, 22), Salida = new DateTime(2021, 11, 27, 12, 3, 8), Fecha = new DateTime(2021, 11, 27), };
             Biometrico E1dia59 = new Biometrico() { Entrada = new DateTime(2021, 11, 28, 8, 1, 57), Salida = new DateTime(2021, 11, 28, 12, 0, 27), Fecha = new DateTime(2021, 11, 28), };
             Biometrico E1dia60 = new Biometrico() { Entrada = new DateTime(2021, 11, 29, 8, 3, 29), Salida = new DateTime(2021, 11, 29, 12, 0, 22), Fecha = new DateTime(2021, 11, 29), };
             Biometrico E1dia61 = new Biometrico() { Entrada = new DateTime(2021, 11, 30, 8, 1, 33), Salida = new DateTime(2021, 11, 30, 12, 4, 21), Fecha = new DateTime(2021, 11, 30), };
             Biometrico E1dia62 = new Biometrico() { Entrada = new DateTime(2021, 12, 1, 8, 3, 36), Salida = new DateTime(2021, 12, 1, 12, 1, 1), Fecha = new DateTime(2021, 12, 1), };
-            Biometrico E1dia63 = new Biometrico() { Entrada = new DateTime(2021, 12, 2, 8, 6, 19), Salida = new DateTime(2021, 12, 2, 12, 3, 11), Fecha = new DateTime(2021, 12, 2), };
+            Biometrico E1dia63 = new Biometrico() { Entrada = new DateTime(2021, 12, 2, 8, 5, 19), Salida = new DateTime(2021, 12, 2, 12, 3, 11), Fecha = new DateTime(2021, 12, 2), };
             Biometrico E1dia64 = new Biometrico() { Entrada = new DateTime(2021, 12, 3, 8, 4, 18), Salida = new DateTime(2021, 12, 3, 12, 2, 53), Fecha = new DateTime(2021, 12, 3), };
             Biometrico E1dia65 = new Biometrico() { Entrada = new DateTime(2021, 12, 4, 8, 3, 16), Salida = new DateTime(2021, 12, 4, 12, 1, 19), Fecha = new DateTime(2021, 12, 4), };
-            Biometrico E1dia66 = new Biometrico() { Entrada = new DateTime(2021, 12, 5, 8, 7, 17), Salida = new DateTime(2021, 12, 5, 12, 4, 36), Fecha = new DateTime(2021, 12, 5), };
+            Biometrico E1dia66 = new Biometrico() { Entrada = new DateTime(2021, 12, 5, 8, 4, 17), Salida = new DateTime(2021, 12, 5, 12, 4, 36), Fecha = new DateTime(2021, 12, 5), };
             Biometrico E1dia67 = new Biometrico() { Entrada = new DateTime(2021, 12, 6, 8, 0, 58), Salida = new DateTime(2021, 12, 6, 12, 5, 59), Fecha = new DateTime(2021, 12, 6), };
             Biometrico E1dia68 = new Biometrico() { Entrada = new DateTime(2021, 12, 7, 8, 3, 19), Salida = new DateTime(2021, 12, 7, 12, 4, 53), Fecha = new DateTime(2021, 12, 7), };
             Biometrico E1dia69 = new Biometrico() { Entrada = new DateTime(2021, 12, 8, 8, 1, 4), Salida = new DateTime(2021, 12, 8, 12, 0, 51), Fecha = new DateTime(2021, 12, 8), };
             Biometrico E1dia70 = new Biometrico() { Entrada = new DateTime(2021, 12, 9, 8, 2, 9), Salida = new DateTime(2021, 12, 9, 12, 2, 21), Fecha = new DateTime(2021, 12, 9), };
             Biometrico E1dia71 = new Biometrico() { Entrada = new DateTime(2021, 12, 10, 8, 5, 50), Salida = new DateTime(2021, 12, 10, 12, 4, 3), Fecha = new DateTime(2021, 12, 10), };
             Biometrico E1dia72 = new Biometrico() { Entrada = new DateTime(2021, 12, 11, 8, 2, 25), Salida = new DateTime(2021, 12, 11, 12, 1, 46), Fecha = new DateTime(2021, 12, 11), };
-            Biometrico E1dia73 = new Biometrico() { Entrada = new DateTime(2021, 12, 12, 8, 7, 16), Salida = new DateTime(2021, 12, 12, 12, 2, 44), Fecha = new DateTime(2021, 12, 12), };
+            Biometrico E1dia73 = new Biometrico() { Entrada = new DateTime(2021, 12, 12, 8, 5, 16), Salida = new DateTime(2021, 12, 12, 12, 2, 44), Fecha = new DateTime(2021, 12, 12), };
             Biometrico E1dia74 = new Biometrico() { Entrada = new DateTime(2021, 12, 13, 8, 3, 4), Salida = new DateTime(2021, 12, 13, 12, 4, 6), Fecha = new DateTime(2021, 12, 13), };
-            Biometrico E1dia75 = new Biometrico() { Entrada = new DateTime(2021, 12, 14, 8, 7, 29), Salida = new DateTime(2021, 12, 14, 12, 3, 10), Fecha = new DateTime(2021, 12, 14), };
+            Biometrico E1dia75 = new Biometrico() { Entrada = new DateTime(2021, 12, 14, 8, 5, 29), Salida = new DateTime(2021, 12, 14, 12, 3, 10), Fecha = new DateTime(2021, 12, 14), };
             Biometrico E1dia76 = new Biometrico() { Entrada = new DateTime(2021, 12, 15, 8, 3, 54), Salida = new DateTime(2021, 12, 15, 12, 0, 34), Fecha = new DateTime(2021, 12, 15), };
             Biometrico E1dia77 = new Biometrico() { Entrada = new DateTime(2021, 12, 16, 8, 2, 35), Salida = new DateTime(2021, 12, 16, 12, 1, 25), Fecha = new DateTime(2021, 12, 16), };
             Biometrico E1dia78 = new Biometrico() { Entrada = new DateTime(2021, 12, 17, 8, 0, 59), Salida = new DateTime(2021, 12, 17, 12, 4, 39), Fecha = new DateTime(2021, 12, 17), };
@@ -102,11 +102,11 @@ namespace CargaDatos
             Biometrico E1dia80 = new Biometrico() { Entrada = new DateTime(2021, 12, 19, 8, 2, 0), Salida = new DateTime(2021, 12, 19, 12, 1, 15), Fecha = new DateTime(2021, 12, 19), };
             Biometrico E1dia81 = new Biometrico() { Entrada = new DateTime(2021, 12, 20, 8, 5, 44), Salida = new DateTime(2021, 12, 20, 12, 4, 35), Fecha = new DateTime(2021, 12, 20), };
             Biometrico E1dia82 = new Biometrico() { Entrada = new DateTime(2021, 12, 21, 8, 2, 22), Salida = new DateTime(2021, 12, 21, 12, 0, 34), Fecha = new DateTime(2021, 12, 21), };
-            Biometrico E1dia83 = new Biometrico() { Entrada = new DateTime(2021, 12, 22, 8, 6, 56), Salida = new DateTime(2021, 12, 22, 12, 1, 20), Fecha = new DateTime(2021, 12, 22), };
-            Biometrico E1dia84 = new Biometrico() { Entrada = new DateTime(2021, 12, 23, 8, 6, 35), Salida = new DateTime(2021, 12, 23, 12, 3, 42), Fecha = new DateTime(2021, 12, 23), };
+            Biometrico E1dia83 = new Biometrico() { Entrada = new DateTime(2021, 12, 22, 8, 4, 56), Salida = new DateTime(2021, 12, 22, 12, 1, 20), Fecha = new DateTime(2021, 12, 22), };
+            Biometrico E1dia84 = new Biometrico() { Entrada = new DateTime(2021, 12, 23, 8, 4, 35), Salida = new DateTime(2021, 12, 23, 12, 3, 42), Fecha = new DateTime(2021, 12, 23), };
             Biometrico E1dia85 = new Biometrico() { Entrada = new DateTime(2021, 12, 24, 8, 4, 7), Salida = new DateTime(2021, 12, 24, 12, 1, 26), Fecha = new DateTime(2021, 12, 24), };
             Biometrico E1dia86 = new Biometrico() { Entrada = new DateTime(2021, 12, 25, 8, 0, 47), Salida = new DateTime(2021, 12, 25, 12, 2, 51), Fecha = new DateTime(2021, 12, 25), };
-            Biometrico E1dia87 = new Biometrico() { Entrada = new DateTime(2021, 12, 26, 8, 6, 8), Salida = new DateTime(2021, 12, 26, 12, 5, 8), Fecha = new DateTime(2021, 12, 26), };
+            Biometrico E1dia87 = new Biometrico() { Entrada = new DateTime(2021, 12, 26, 8, 4, 8), Salida = new DateTime(2021, 12, 26, 12, 5, 8), Fecha = new DateTime(2021, 12, 26), };
             Biometrico E1dia88 = new Biometrico() { Entrada = new DateTime(2021, 12, 27, 8, 2, 51), Salida = new DateTime(2021, 12, 27, 12, 3, 13), Fecha = new DateTime(2021, 12, 27), };
             Biometrico E1dia89 = new Biometrico() { Entrada = new DateTime(2021, 12, 28, 8, 4, 23), Salida = new DateTime(2021, 12, 28, 12, 4, 17), Fecha = new DateTime(2021, 12, 28), };
             Biometrico E1dia90 = new Biometrico() { Entrada = new DateTime(2021, 12, 29, 8, 5, 9), Salida = new DateTime(2021, 12, 29, 12, 4, 16), Fecha = new DateTime(2021, 12, 29), };
@@ -178,6 +178,11 @@ namespace CargaDatos
                 {
                     Fecha = new DateTime(2022, 01, 05),
                     Calificacion = Calificacion.Buena
+                },
+                Contrato = new Contrato()
+                {
+                    Fecha = DateTime.Now,
+                    Estado = ContratoEstado.Pendiente,
                 }
             };
 
@@ -347,6 +352,11 @@ namespace CargaDatos
                 {
                     Fecha = new DateTime(2022, 01, 05),
                     Calificacion = Calificacion.Buena
+                },
+                Contrato = new Contrato()
+                {
+                    Fecha = DateTime.Now,
+                    Estado = ContratoEstado.Pendiente,
                 }
             };
 
@@ -508,101 +518,106 @@ namespace CargaDatos
                 {
                     Fecha = new DateTime(2022, 01, 05),
                     Calificacion = Calificacion.Buena
+                },
+                Contrato = new Contrato()
+                {
+                    Fecha = DateTime.Now,
+                    Estado = ContratoEstado.Pendiente,
                 }
             };
 
 
             //EMPLEADO 4---------------------------------------------------------------------------------------------------
-            Biometrico E4dia1 = new Biometrico() { Entrada = new DateTime(2021, 10, 1, 8, 0, 34), Salida = new DateTime(2021, 10, 1, 12, 3, 22), Fecha = new DateTime(2021, 10, 1), };
-            Biometrico E4dia2 = new Biometrico() { Entrada = new DateTime(2021, 10, 2, 8, 2, 15), Salida = new DateTime(2021, 10, 2, 12, 0, 16), Fecha = new DateTime(2021, 10, 2), };
-            Biometrico E4dia3 = new Biometrico() { Entrada = new DateTime(2021, 10, 3, 8, 7, 24), Salida = new DateTime(2021, 10, 3, 12, 4, 13), Fecha = new DateTime(2021, 10, 3), };
-            Biometrico E4dia4 = new Biometrico() { Entrada = new DateTime(2021, 10, 4, 8, 1, 9), Salida = new DateTime(2021, 10, 4, 12, 3, 19), Fecha = new DateTime(2021, 10, 4), };
-            Biometrico E4dia5 = new Biometrico() { Entrada = new DateTime(2021, 10, 5, 8, 5, 56), Salida = new DateTime(2021, 10, 5, 12, 2, 19), Fecha = new DateTime(2021, 10, 5), };
-            Biometrico E4dia6 = new Biometrico() { Entrada = new DateTime(2021, 10, 6, 8, 3, 10), Salida = new DateTime(2021, 10, 6, 12, 3, 16), Fecha = new DateTime(2021, 10, 6), };
-            Biometrico E4dia7 = new Biometrico() { Entrada = new DateTime(2021, 10, 7, 8, 4, 59), Salida = new DateTime(2021, 10, 7, 12, 0, 58), Fecha = new DateTime(2021, 10, 7), };
-            Biometrico E4dia8 = new Biometrico() { Entrada = new DateTime(2021, 10, 8, 8, 3, 23), Salida = new DateTime(2021, 10, 8, 12, 2, 56), Fecha = new DateTime(2021, 10, 8), };
-            Biometrico E4dia9 = new Biometrico() { Entrada = new DateTime(2021, 10, 9, 8, 5, 58), Salida = new DateTime(2021, 10, 9, 12, 1, 53), Fecha = new DateTime(2021, 10, 9), };
-            Biometrico E4dia10 = new Biometrico() { Entrada = new DateTime(2021, 10, 10, 8, 6, 3), Salida = new DateTime(2021, 10, 10, 12, 5, 55), Fecha = new DateTime(2021, 10, 10), };
-            Biometrico E4dia11 = new Biometrico() { Entrada = new DateTime(2021, 10, 11, 8, 7, 13), Salida = new DateTime(2021, 10, 11, 12, 5, 11), Fecha = new DateTime(2021, 10, 11), };
-            Biometrico E4dia12 = new Biometrico() { Entrada = new DateTime(2021, 10, 12, 8, 0, 31), Salida = new DateTime(2021, 10, 12, 12, 0, 37), Fecha = new DateTime(2021, 10, 12), };
-            Biometrico E4dia13 = new Biometrico() { Entrada = new DateTime(2021, 10, 13, 8, 6, 33), Salida = new DateTime(2021, 10, 13, 12, 1, 45), Fecha = new DateTime(2021, 10, 13), };
-            Biometrico E4dia14 = new Biometrico() { Entrada = new DateTime(2021, 10, 14, 8, 4, 47), Salida = new DateTime(2021, 10, 14, 12, 3, 29), Fecha = new DateTime(2021, 10, 14), };
-            Biometrico E4dia15 = new Biometrico() { Entrada = new DateTime(2021, 10, 15, 8, 6, 45), Salida = new DateTime(2021, 10, 15, 12, 0, 46), Fecha = new DateTime(2021, 10, 15), };
-            Biometrico E4dia16 = new Biometrico() { Entrada = new DateTime(2021, 10, 16, 8, 0, 10), Salida = new DateTime(2021, 10, 16, 12, 0, 24), Fecha = new DateTime(2021, 10, 16), };
-            Biometrico E4dia17 = new Biometrico() { Entrada = new DateTime(2021, 10, 17, 8, 6, 30), Salida = new DateTime(2021, 10, 17, 12, 5, 3), Fecha = new DateTime(2021, 10, 17), };
-            Biometrico E4dia18 = new Biometrico() { Entrada = new DateTime(2021, 10, 18, 8, 0, 6), Salida = new DateTime(2021, 10, 18, 12, 3, 21), Fecha = new DateTime(2021, 10, 18), };
-            Biometrico E4dia19 = new Biometrico() { Entrada = new DateTime(2021, 10, 19, 8, 7, 54), Salida = new DateTime(2021, 10, 19, 12, 5, 52), Fecha = new DateTime(2021, 10, 19), };
-            Biometrico E4dia20 = new Biometrico() { Entrada = new DateTime(2021, 10, 20, 8, 4, 42), Salida = new DateTime(2021, 10, 20, 12, 2, 55), Fecha = new DateTime(2021, 10, 20), };
-            Biometrico E4dia21 = new Biometrico() { Entrada = new DateTime(2021, 10, 21, 8, 1, 24), Salida = new DateTime(2021, 10, 21, 12, 5, 43), Fecha = new DateTime(2021, 10, 21), };
-            Biometrico E4dia22 = new Biometrico() { Entrada = new DateTime(2021, 10, 22, 8, 5, 48), Salida = new DateTime(2021, 10, 22, 12, 1, 6), Fecha = new DateTime(2021, 10, 22), };
-            Biometrico E4dia23 = new Biometrico() { Entrada = new DateTime(2021, 10, 23, 8, 6, 1), Salida = new DateTime(2021, 10, 23, 12, 0, 43), Fecha = new DateTime(2021, 10, 23), };
-            Biometrico E4dia24 = new Biometrico() { Entrada = new DateTime(2021, 10, 24, 8, 0, 22), Salida = new DateTime(2021, 10, 24, 12, 3, 59), Fecha = new DateTime(2021, 10, 24), };
-            Biometrico E4dia25 = new Biometrico() { Entrada = new DateTime(2021, 10, 25, 8, 2, 7), Salida = new DateTime(2021, 10, 25, 12, 1, 12), Fecha = new DateTime(2021, 10, 25), };
-            Biometrico E4dia26 = new Biometrico() { Entrada = new DateTime(2021, 10, 26, 8, 4, 0), Salida = new DateTime(2021, 10, 26, 12, 0, 22), Fecha = new DateTime(2021, 10, 26), };
-            Biometrico E4dia27 = new Biometrico() { Entrada = new DateTime(2021, 10, 27, 8, 7, 11), Salida = new DateTime(2021, 10, 27, 12, 1, 32), Fecha = new DateTime(2021, 10, 27), };
-            Biometrico E4dia28 = new Biometrico() { Entrada = new DateTime(2021, 10, 28, 8, 1, 10), Salida = new DateTime(2021, 10, 28, 12, 5, 24), Fecha = new DateTime(2021, 10, 28), };
-            Biometrico E4dia29 = new Biometrico() { Entrada = new DateTime(2021, 10, 29, 8, 0, 48), Salida = new DateTime(2021, 10, 29, 12, 5, 37), Fecha = new DateTime(2021, 10, 29), };
-            Biometrico E4dia30 = new Biometrico() { Entrada = new DateTime(2021, 10, 30, 8, 3, 5), Salida = new DateTime(2021, 10, 30, 12, 2, 27), Fecha = new DateTime(2021, 10, 30), };
-            Biometrico E4dia31 = new Biometrico() { Entrada = new DateTime(2021, 10, 31, 8, 5, 44), Salida = new DateTime(2021, 10, 31, 12, 5, 22), Fecha = new DateTime(2021, 10, 31), };
-            Biometrico E4dia32 = new Biometrico() { Entrada = new DateTime(2021, 11, 1, 8, 3, 51), Salida = new DateTime(2021, 11, 1, 12, 4, 55), Fecha = new DateTime(2021, 11, 1), };
-            Biometrico E4dia33 = new Biometrico() { Entrada = new DateTime(2021, 11, 2, 8, 4, 35), Salida = new DateTime(2021, 11, 2, 12, 2, 18), Fecha = new DateTime(2021, 11, 2), };
-            Biometrico E4dia34 = new Biometrico() { Entrada = new DateTime(2021, 11, 3, 8, 6, 1), Salida = new DateTime(2021, 11, 3, 12, 4, 45), Fecha = new DateTime(2021, 11, 3), };
-            Biometrico E4dia35 = new Biometrico() { Entrada = new DateTime(2021, 11, 4, 8, 4, 31), Salida = new DateTime(2021, 11, 4, 12, 2, 14), Fecha = new DateTime(2021, 11, 4), };
-            Biometrico E4dia36 = new Biometrico() { Entrada = new DateTime(2021, 11, 5, 8, 0, 9), Salida = new DateTime(2021, 11, 5, 12, 2, 51), Fecha = new DateTime(2021, 11, 5), };
-            Biometrico E4dia37 = new Biometrico() { Entrada = new DateTime(2021, 11, 6, 8, 0, 41), Salida = new DateTime(2021, 11, 6, 12, 5, 43), Fecha = new DateTime(2021, 11, 6), };
-            Biometrico E4dia38 = new Biometrico() { Entrada = new DateTime(2021, 11, 7, 8, 6, 52), Salida = new DateTime(2021, 11, 7, 12, 3, 9), Fecha = new DateTime(2021, 11, 7), };
-            Biometrico E4dia39 = new Biometrico() { Entrada = new DateTime(2021, 11, 8, 8, 6, 12), Salida = new DateTime(2021, 11, 8, 12, 2, 8), Fecha = new DateTime(2021, 11, 8), };
-            Biometrico E4dia40 = new Biometrico() { Entrada = new DateTime(2021, 11, 9, 8, 4, 28), Salida = new DateTime(2021, 11, 9, 12, 5, 46), Fecha = new DateTime(2021, 11, 9), };
-            Biometrico E4dia41 = new Biometrico() { Entrada = new DateTime(2021, 11, 10, 8, 7, 35), Salida = new DateTime(2021, 11, 10, 12, 5, 14), Fecha = new DateTime(2021, 11, 10), };
-            Biometrico E4dia42 = new Biometrico() { Entrada = new DateTime(2021, 11, 11, 8, 6, 29), Salida = new DateTime(2021, 11, 11, 12, 1, 59), Fecha = new DateTime(2021, 11, 11), };
-            Biometrico E4dia43 = new Biometrico() { Entrada = new DateTime(2021, 11, 12, 8, 5, 59), Salida = new DateTime(2021, 11, 12, 12, 0, 21), Fecha = new DateTime(2021, 11, 12), };
-            Biometrico E4dia44 = new Biometrico() { Entrada = new DateTime(2021, 11, 13, 8, 7, 24), Salida = new DateTime(2021, 11, 13, 12, 0, 23), Fecha = new DateTime(2021, 11, 13), };
-            Biometrico E4dia45 = new Biometrico() { Entrada = new DateTime(2021, 11, 14, 8, 6, 48), Salida = new DateTime(2021, 11, 14, 12, 1, 38), Fecha = new DateTime(2021, 11, 14), };
-            Biometrico E4dia46 = new Biometrico() { Entrada = new DateTime(2021, 11, 15, 8, 6, 33), Salida = new DateTime(2021, 11, 15, 12, 5, 2), Fecha = new DateTime(2021, 11, 15), };
-            Biometrico E4dia47 = new Biometrico() { Entrada = new DateTime(2021, 11, 16, 8, 4, 52), Salida = new DateTime(2021, 11, 16, 12, 0, 52), Fecha = new DateTime(2021, 11, 16), };
-            Biometrico E4dia48 = new Biometrico() { Entrada = new DateTime(2021, 11, 17, 8, 4, 49), Salida = new DateTime(2021, 11, 17, 12, 3, 1), Fecha = new DateTime(2021, 11, 17), };
-            Biometrico E4dia49 = new Biometrico() { Entrada = new DateTime(2021, 11, 18, 8, 0, 2), Salida = new DateTime(2021, 11, 18, 12, 5, 8), Fecha = new DateTime(2021, 11, 18), };
-            Biometrico E4dia50 = new Biometrico() { Entrada = new DateTime(2021, 11, 19, 8, 5, 29), Salida = new DateTime(2021, 11, 19, 12, 3, 5), Fecha = new DateTime(2021, 11, 19), };
-            Biometrico E4dia51 = new Biometrico() { Entrada = new DateTime(2021, 11, 20, 8, 7, 33), Salida = new DateTime(2021, 11, 20, 12, 2, 38), Fecha = new DateTime(2021, 11, 20), };
-            Biometrico E4dia52 = new Biometrico() { Entrada = new DateTime(2021, 11, 21, 8, 3, 59), Salida = new DateTime(2021, 11, 21, 12, 2, 35), Fecha = new DateTime(2021, 11, 21), };
-            Biometrico E4dia53 = new Biometrico() { Entrada = new DateTime(2021, 11, 22, 8, 4, 53), Salida = new DateTime(2021, 11, 22, 12, 0, 14), Fecha = new DateTime(2021, 11, 22), };
-            Biometrico E4dia54 = new Biometrico() { Entrada = new DateTime(2021, 11, 23, 8, 5, 41), Salida = new DateTime(2021, 11, 23, 12, 1, 33), Fecha = new DateTime(2021, 11, 23), };
-            Biometrico E4dia55 = new Biometrico() { Entrada = new DateTime(2021, 11, 24, 8, 6, 32), Salida = new DateTime(2021, 11, 24, 12, 3, 17), Fecha = new DateTime(2021, 11, 24), };
-            Biometrico E4dia56 = new Biometrico() { Entrada = new DateTime(2021, 11, 25, 8, 5, 52), Salida = new DateTime(2021, 11, 25, 12, 3, 8), Fecha = new DateTime(2021, 11, 25), };
-            Biometrico E4dia57 = new Biometrico() { Entrada = new DateTime(2021, 11, 26, 8, 2, 29), Salida = new DateTime(2021, 11, 26, 12, 2, 20), Fecha = new DateTime(2021, 11, 26), };
-            Biometrico E4dia58 = new Biometrico() { Entrada = new DateTime(2021, 11, 27, 8, 2, 19), Salida = new DateTime(2021, 11, 27, 12, 5, 5), Fecha = new DateTime(2021, 11, 27), };
-            Biometrico E4dia59 = new Biometrico() { Entrada = new DateTime(2021, 11, 28, 8, 3, 5), Salida = new DateTime(2021, 11, 28, 12, 5, 59), Fecha = new DateTime(2021, 11, 28), };
-            Biometrico E4dia60 = new Biometrico() { Entrada = new DateTime(2021, 11, 29, 8, 2, 32), Salida = new DateTime(2021, 11, 29, 12, 2, 0), Fecha = new DateTime(2021, 11, 29), };
-            Biometrico E4dia61 = new Biometrico() { Entrada = new DateTime(2021, 11, 30, 8, 3, 38), Salida = new DateTime(2021, 11, 30, 12, 2, 23), Fecha = new DateTime(2021, 11, 30), };
-            Biometrico E4dia62 = new Biometrico() { Entrada = new DateTime(2021, 12, 1, 8, 3, 17), Salida = new DateTime(2021, 12, 1, 12, 2, 18), Fecha = new DateTime(2021, 12, 1), };
-            Biometrico E4dia63 = new Biometrico() { Entrada = new DateTime(2021, 12, 2, 8, 3, 35), Salida = new DateTime(2021, 12, 2, 12, 5, 54), Fecha = new DateTime(2021, 12, 2), };
-            Biometrico E4dia64 = new Biometrico() { Entrada = new DateTime(2021, 12, 3, 8, 0, 19), Salida = new DateTime(2021, 12, 3, 12, 0, 26), Fecha = new DateTime(2021, 12, 3), };
-            Biometrico E4dia65 = new Biometrico() { Entrada = new DateTime(2021, 12, 4, 8, 1, 11), Salida = new DateTime(2021, 12, 4, 12, 5, 39), Fecha = new DateTime(2021, 12, 4), };
-            Biometrico E4dia66 = new Biometrico() { Entrada = new DateTime(2021, 12, 5, 8, 0, 55), Salida = new DateTime(2021, 12, 5, 12, 2, 42), Fecha = new DateTime(2021, 12, 5), };
-            Biometrico E4dia67 = new Biometrico() { Entrada = new DateTime(2021, 12, 6, 8, 6, 11), Salida = new DateTime(2021, 12, 6, 12, 2, 16), Fecha = new DateTime(2021, 12, 6), };
-            Biometrico E4dia68 = new Biometrico() { Entrada = new DateTime(2021, 12, 7, 8, 1, 3), Salida = new DateTime(2021, 12, 7, 12, 2, 53), Fecha = new DateTime(2021, 12, 7), };
-            Biometrico E4dia69 = new Biometrico() { Entrada = new DateTime(2021, 12, 8, 8, 0, 42), Salida = new DateTime(2021, 12, 8, 12, 4, 59), Fecha = new DateTime(2021, 12, 8), };
-            Biometrico E4dia70 = new Biometrico() { Entrada = new DateTime(2021, 12, 9, 8, 6, 15), Salida = new DateTime(2021, 12, 9, 12, 2, 1), Fecha = new DateTime(2021, 12, 9), };
-            Biometrico E4dia71 = new Biometrico() { Entrada = new DateTime(2021, 12, 10, 8, 0, 31), Salida = new DateTime(2021, 12, 10, 12, 4, 39), Fecha = new DateTime(2021, 12, 10), };
-            Biometrico E4dia72 = new Biometrico() { Entrada = new DateTime(2021, 12, 11, 8, 1, 47), Salida = new DateTime(2021, 12, 11, 12, 3, 50), Fecha = new DateTime(2021, 12, 11), };
-            Biometrico E4dia73 = new Biometrico() { Entrada = new DateTime(2021, 12, 12, 8, 3, 2), Salida = new DateTime(2021, 12, 12, 12, 1, 1), Fecha = new DateTime(2021, 12, 12), };
-            Biometrico E4dia74 = new Biometrico() { Entrada = new DateTime(2021, 12, 13, 8, 6, 51), Salida = new DateTime(2021, 12, 13, 12, 1, 24), Fecha = new DateTime(2021, 12, 13), };
-            Biometrico E4dia75 = new Biometrico() { Entrada = new DateTime(2021, 12, 14, 8, 1, 13), Salida = new DateTime(2021, 12, 14, 12, 0, 0), Fecha = new DateTime(2021, 12, 14), };
-            Biometrico E4dia76 = new Biometrico() { Entrada = new DateTime(2021, 12, 15, 8, 6, 52), Salida = new DateTime(2021, 12, 15, 12, 3, 35), Fecha = new DateTime(2021, 12, 15), };
-            Biometrico E4dia77 = new Biometrico() { Entrada = new DateTime(2021, 12, 16, 8, 6, 5), Salida = new DateTime(2021, 12, 16, 12, 5, 19), Fecha = new DateTime(2021, 12, 16), };
-            Biometrico E4dia78 = new Biometrico() { Entrada = new DateTime(2021, 12, 17, 8, 1, 33), Salida = new DateTime(2021, 12, 17, 12, 5, 34), Fecha = new DateTime(2021, 12, 17), };
-            Biometrico E4dia79 = new Biometrico() { Entrada = new DateTime(2021, 12, 18, 8, 4, 25), Salida = new DateTime(2021, 12, 18, 12, 4, 27), Fecha = new DateTime(2021, 12, 18), };
-            Biometrico E4dia80 = new Biometrico() { Entrada = new DateTime(2021, 12, 19, 8, 6, 13), Salida = new DateTime(2021, 12, 19, 12, 1, 10), Fecha = new DateTime(2021, 12, 19), };
-            Biometrico E4dia81 = new Biometrico() { Entrada = new DateTime(2021, 12, 20, 8, 4, 28), Salida = new DateTime(2021, 12, 20, 12, 5, 31), Fecha = new DateTime(2021, 12, 20), };
-            Biometrico E4dia82 = new Biometrico() { Entrada = new DateTime(2021, 12, 21, 8, 1, 58), Salida = new DateTime(2021, 12, 21, 12, 3, 43), Fecha = new DateTime(2021, 12, 21), };
-            Biometrico E4dia83 = new Biometrico() { Entrada = new DateTime(2021, 12, 22, 8, 0, 22), Salida = new DateTime(2021, 12, 22, 12, 3, 48), Fecha = new DateTime(2021, 12, 22), };
-            Biometrico E4dia84 = new Biometrico() { Entrada = new DateTime(2021, 12, 23, 8, 3, 57), Salida = new DateTime(2021, 12, 23, 12, 0, 44), Fecha = new DateTime(2021, 12, 23), };
-            Biometrico E4dia85 = new Biometrico() { Entrada = new DateTime(2021, 12, 24, 8, 1, 14), Salida = new DateTime(2021, 12, 24, 12, 1, 51), Fecha = new DateTime(2021, 12, 24), };
-            Biometrico E4dia86 = new Biometrico() { Entrada = new DateTime(2021, 12, 25, 8, 5, 17), Salida = new DateTime(2021, 12, 25, 12, 4, 52), Fecha = new DateTime(2021, 12, 25), };
-            Biometrico E4dia87 = new Biometrico() { Entrada = new DateTime(2021, 12, 26, 8, 7, 49), Salida = new DateTime(2021, 12, 26, 12, 4, 56), Fecha = new DateTime(2021, 12, 26), };
-            Biometrico E4dia88 = new Biometrico() { Entrada = new DateTime(2021, 12, 27, 8, 6, 54), Salida = new DateTime(2021, 12, 27, 12, 1, 41), Fecha = new DateTime(2021, 12, 27), };
-            Biometrico E4dia89 = new Biometrico() { Entrada = new DateTime(2021, 12, 28, 8, 5, 46), Salida = new DateTime(2021, 12, 28, 12, 0, 4), Fecha = new DateTime(2021, 12, 28), };
-            Biometrico E4dia90 = new Biometrico() { Entrada = new DateTime(2021, 12, 29, 8, 3, 14), Salida = new DateTime(2021, 12, 29, 12, 3, 52), Fecha = new DateTime(2021, 12, 29), };
+            Biometrico E4dia1 = new Biometrico() { Entrada = new DateTime(2021, 10, 1, 8, 0, 13), Salida = new DateTime(2021, 10, 1, 12, 3, 20), Fecha = new DateTime(2021, 10, 1), };
+            Biometrico E4dia2 = new Biometrico() { Entrada = new DateTime(2021, 10, 2, 8, 3, 15), Salida = new DateTime(2021, 10, 2, 12, 5, 30), Fecha = new DateTime(2021, 10, 2), };
+            Biometrico E4dia3 = new Biometrico() { Entrada = new DateTime(2021, 10, 3, 8, 2, 23), Salida = new DateTime(2021, 10, 3, 12, 1, 22), Fecha = new DateTime(2021, 10, 3), };
+            Biometrico E4dia4 = new Biometrico() { Entrada = new DateTime(2021, 10, 4, 8, 1, 27), Salida = new DateTime(2021, 10, 4, 12, 2, 6), Fecha = new DateTime(2021, 10, 4), };
+            Biometrico E4dia5 = new Biometrico() { Entrada = new DateTime(2021, 10, 5, 8, 5, 37), Salida = new DateTime(2021, 10, 5, 12, 2, 0), Fecha = new DateTime(2021, 10, 5), };
+            Biometrico E4dia6 = new Biometrico() { Entrada = new DateTime(2021, 10, 6, 8, 2, 33), Salida = new DateTime(2021, 10, 6, 12, 0, 16), Fecha = new DateTime(2021, 10, 6), };
+            Biometrico E4dia7 = new Biometrico() { Entrada = new DateTime(2021, 10, 7, 8, 2, 27), Salida = new DateTime(2021, 10, 7, 12, 4, 50), Fecha = new DateTime(2021, 10, 7), };
+            Biometrico E4dia8 = new Biometrico() { Entrada = new DateTime(2021, 10, 8, 8, 5, 56), Salida = new DateTime(2021, 10, 8, 12, 2, 28), Fecha = new DateTime(2021, 10, 8), };
+            Biometrico E4dia9 = new Biometrico() { Entrada = new DateTime(2021, 10, 9, 8, 5, 39), Salida = new DateTime(2021, 10, 9, 12, 5, 2), Fecha = new DateTime(2021, 10, 9), };
+            Biometrico E4dia10 = new Biometrico() { Entrada = new DateTime(2021, 10, 10, 8, 0, 33), Salida = new DateTime(2021, 10, 10, 12, 1, 11), Fecha = new DateTime(2021, 10, 10), };
+            Biometrico E4dia11 = new Biometrico() { Entrada = new DateTime(2021, 10, 11, 8, 0, 16), Salida = new DateTime(2021, 10, 11, 12, 0, 24), Fecha = new DateTime(2021, 10, 11), };
+            Biometrico E4dia12 = new Biometrico() { Entrada = new DateTime(2021, 10, 12, 8, 3, 48), Salida = new DateTime(2021, 10, 12, 12, 3, 14), Fecha = new DateTime(2021, 10, 12), };
+            Biometrico E4dia13 = new Biometrico() { Entrada = new DateTime(2021, 10, 13, 8, 4, 45), Salida = new DateTime(2021, 10, 13, 12, 0, 2), Fecha = new DateTime(2021, 10, 13), };
+            Biometrico E4dia14 = new Biometrico() { Entrada = new DateTime(2021, 10, 14, 8, 0, 47), Salida = new DateTime(2021, 10, 14, 12, 0, 40), Fecha = new DateTime(2021, 10, 14), };
+            Biometrico E4dia15 = new Biometrico() { Entrada = new DateTime(2021, 10, 15, 8, 3, 20), Salida = new DateTime(2021, 10, 15, 12, 1, 10), Fecha = new DateTime(2021, 10, 15), };
+            Biometrico E4dia16 = new Biometrico() { Entrada = new DateTime(2021, 10, 16, 8, 2, 34), Salida = new DateTime(2021, 10, 16, 12, 1, 40), Fecha = new DateTime(2021, 10, 16), };
+            Biometrico E4dia17 = new Biometrico() { Entrada = new DateTime(2021, 10, 17, 8, 5, 54), Salida = new DateTime(2021, 10, 17, 12, 0, 19), Fecha = new DateTime(2021, 10, 17), };
+            Biometrico E4dia18 = new Biometrico() { Entrada = new DateTime(2021, 10, 18, 8, 5, 57), Salida = new DateTime(2021, 10, 18, 12, 5, 15), Fecha = new DateTime(2021, 10, 18), };
+            Biometrico E4dia19 = new Biometrico() { Entrada = new DateTime(2021, 10, 19, 8, 0, 3), Salida = new DateTime(2021, 10, 19, 12, 0, 4), Fecha = new DateTime(2021, 10, 19), };
+            Biometrico E4dia20 = new Biometrico() { Entrada = new DateTime(2021, 10, 20, 8, 2, 18), Salida = new DateTime(2021, 10, 20, 12, 5, 15), Fecha = new DateTime(2021, 10, 20), };
+            Biometrico E4dia21 = new Biometrico() { Entrada = new DateTime(2021, 10, 21, 8, 1, 16), Salida = new DateTime(2021, 10, 21, 12, 0, 34), Fecha = new DateTime(2021, 10, 21), };
+            Biometrico E4dia22 = new Biometrico() { Entrada = new DateTime(2021, 10, 22, 8, 5, 44), Salida = new DateTime(2021, 10, 22, 12, 3, 43), Fecha = new DateTime(2021, 10, 22), };
+            Biometrico E4dia23 = new Biometrico() { Entrada = new DateTime(2021, 10, 23, 8, 0, 54), Salida = new DateTime(2021, 10, 23, 12, 0, 45), Fecha = new DateTime(2021, 10, 23), };
+            Biometrico E4dia24 = new Biometrico() { Entrada = new DateTime(2021, 10, 24, 8, 0, 41), Salida = new DateTime(2021, 10, 24, 12, 2, 15), Fecha = new DateTime(2021, 10, 24), };
+            Biometrico E4dia25 = new Biometrico() { Entrada = new DateTime(2021, 10, 25, 8, 1, 50), Salida = new DateTime(2021, 10, 25, 12, 1, 19), Fecha = new DateTime(2021, 10, 25), };
+            Biometrico E4dia26 = new Biometrico() { Entrada = new DateTime(2021, 10, 26, 8, 3, 3), Salida = new DateTime(2021, 10, 26, 12, 4, 9), Fecha = new DateTime(2021, 10, 26), };
+            Biometrico E4dia27 = new Biometrico() { Entrada = new DateTime(2021, 10, 27, 8, 4, 23), Salida = new DateTime(2021, 10, 27, 12, 2, 8), Fecha = new DateTime(2021, 10, 27), };
+            Biometrico E4dia28 = new Biometrico() { Entrada = new DateTime(2021, 10, 28, 8, 5, 39), Salida = new DateTime(2021, 10, 28, 12, 3, 27), Fecha = new DateTime(2021, 10, 28), };
+            Biometrico E4dia29 = new Biometrico() { Entrada = new DateTime(2021, 10, 29, 8, 1, 2), Salida = new DateTime(2021, 10, 29, 12, 5, 53), Fecha = new DateTime(2021, 10, 29), };
+            Biometrico E4dia30 = new Biometrico() { Entrada = new DateTime(2021, 10, 30, 8, 1, 18), Salida = new DateTime(2021, 10, 30, 12, 0, 33), Fecha = new DateTime(2021, 10, 30), };
+            Biometrico E4dia31 = new Biometrico() { Entrada = new DateTime(2021, 10, 31, 8, 0, 28), Salida = new DateTime(2021, 10, 31, 12, 2, 59), Fecha = new DateTime(2021, 10, 31), };
+            Biometrico E4dia32 = new Biometrico() { Entrada = new DateTime(2021, 11, 1, 8, 2, 2), Salida = new DateTime(2021, 11, 1, 12, 0, 35), Fecha = new DateTime(2021, 11, 1), };
+            Biometrico E4dia33 = new Biometrico() { Entrada = new DateTime(2021, 11, 2, 8, 2, 35), Salida = new DateTime(2021, 11, 2, 12, 0, 18), Fecha = new DateTime(2021, 11, 2), };
+            Biometrico E4dia34 = new Biometrico() { Entrada = new DateTime(2021, 11, 3, 8, 5, 54), Salida = new DateTime(2021, 11, 3, 12, 1, 38), Fecha = new DateTime(2021, 11, 3), };
+            Biometrico E4dia35 = new Biometrico() { Entrada = new DateTime(2021, 11, 4, 8, 1, 0), Salida = new DateTime(2021, 11, 4, 12, 5, 6), Fecha = new DateTime(2021, 11, 4), };
+            Biometrico E4dia36 = new Biometrico() { Entrada = new DateTime(2021, 11, 5, 8, 1, 1), Salida = new DateTime(2021, 11, 5, 12, 1, 41), Fecha = new DateTime(2021, 11, 5), };
+            Biometrico E4dia37 = new Biometrico() { Entrada = new DateTime(2021, 11, 6, 8, 3, 40), Salida = new DateTime(2021, 11, 6, 12, 2, 9), Fecha = new DateTime(2021, 11, 6), };
+            Biometrico E4dia38 = new Biometrico() { Entrada = new DateTime(2021, 11, 7, 8, 4, 35), Salida = new DateTime(2021, 11, 7, 12, 1, 25), Fecha = new DateTime(2021, 11, 7), };
+            Biometrico E4dia39 = new Biometrico() { Entrada = new DateTime(2021, 11, 8, 8, 1, 52), Salida = new DateTime(2021, 11, 8, 12, 4, 36), Fecha = new DateTime(2021, 11, 8), };
+            Biometrico E4dia40 = new Biometrico() { Entrada = new DateTime(2021, 11, 9, 8, 3, 25), Salida = new DateTime(2021, 11, 9, 12, 2, 28), Fecha = new DateTime(2021, 11, 9), };
+            Biometrico E4dia41 = new Biometrico() { Entrada = new DateTime(2021, 11, 10, 8, 3, 4), Salida = new DateTime(2021, 11, 10, 12, 5, 38), Fecha = new DateTime(2021, 11, 10), };
+            Biometrico E4dia42 = new Biometrico() { Entrada = new DateTime(2021, 11, 11, 8, 0, 14), Salida = new DateTime(2021, 11, 11, 12, 2, 35), Fecha = new DateTime(2021, 11, 11), };
+            Biometrico E4dia43 = new Biometrico() { Entrada = new DateTime(2021, 11, 12, 8, 4, 42), Salida = new DateTime(2021, 11, 12, 12, 1, 17), Fecha = new DateTime(2021, 11, 12), };
+            Biometrico E4dia44 = new Biometrico() { Entrada = new DateTime(2021, 11, 13, 8, 4, 55), Salida = new DateTime(2021, 11, 13, 12, 1, 38), Fecha = new DateTime(2021, 11, 13), };
+            Biometrico E4dia45 = new Biometrico() { Entrada = new DateTime(2021, 11, 14, 8, 5, 13), Salida = new DateTime(2021, 11, 14, 12, 3, 52), Fecha = new DateTime(2021, 11, 14), };
+            Biometrico E4dia46 = new Biometrico() { Entrada = new DateTime(2021, 11, 15, 8, 1, 8), Salida = new DateTime(2021, 11, 15, 12, 3, 50), Fecha = new DateTime(2021, 11, 15), };
+            Biometrico E4dia47 = new Biometrico() { Entrada = new DateTime(2021, 11, 16, 8, 0, 24), Salida = new DateTime(2021, 11, 16, 12, 4, 59), Fecha = new DateTime(2021, 11, 16), };
+            Biometrico E4dia48 = new Biometrico() { Entrada = new DateTime(2021, 11, 17, 8, 3, 20), Salida = new DateTime(2021, 11, 17, 12, 0, 19), Fecha = new DateTime(2021, 11, 17), };
+            Biometrico E4dia49 = new Biometrico() { Entrada = new DateTime(2021, 11, 18, 8, 2, 35), Salida = new DateTime(2021, 11, 18, 12, 4, 20), Fecha = new DateTime(2021, 11, 18), };
+            Biometrico E4dia50 = new Biometrico() { Entrada = new DateTime(2021, 11, 19, 8, 0, 17), Salida = new DateTime(2021, 11, 19, 12, 1, 0), Fecha = new DateTime(2021, 11, 19), };
+            Biometrico E4dia51 = new Biometrico() { Entrada = new DateTime(2021, 11, 20, 8, 2, 49), Salida = new DateTime(2021, 11, 20, 12, 2, 26), Fecha = new DateTime(2021, 11, 20), };
+            Biometrico E4dia52 = new Biometrico() { Entrada = new DateTime(2021, 11, 21, 8, 0, 19), Salida = new DateTime(2021, 11, 21, 12, 4, 21), Fecha = new DateTime(2021, 11, 21), };
+            Biometrico E4dia53 = new Biometrico() { Entrada = new DateTime(2021, 11, 22, 8, 3, 51), Salida = new DateTime(2021, 11, 22, 12, 4, 1), Fecha = new DateTime(2021, 11, 22), };
+            Biometrico E4dia54 = new Biometrico() { Entrada = new DateTime(2021, 11, 23, 8, 4, 47), Salida = new DateTime(2021, 11, 23, 12, 4, 48), Fecha = new DateTime(2021, 11, 23), };
+            Biometrico E4dia55 = new Biometrico() { Entrada = new DateTime(2021, 11, 24, 8, 2, 16), Salida = new DateTime(2021, 11, 24, 12, 5, 54), Fecha = new DateTime(2021, 11, 24), };
+            Biometrico E4dia56 = new Biometrico() { Entrada = new DateTime(2021, 11, 25, 8, 1, 15), Salida = new DateTime(2021, 11, 25, 12, 2, 33), Fecha = new DateTime(2021, 11, 25), };
+            Biometrico E4dia57 = new Biometrico() { Entrada = new DateTime(2021, 11, 26, 8, 3, 35), Salida = new DateTime(2021, 11, 26, 12, 1, 8), Fecha = new DateTime(2021, 11, 26), };
+            Biometrico E4dia58 = new Biometrico() { Entrada = new DateTime(2021, 11, 27, 8, 3, 27), Salida = new DateTime(2021, 11, 27, 12, 3, 24), Fecha = new DateTime(2021, 11, 27), };
+            Biometrico E4dia59 = new Biometrico() { Entrada = new DateTime(2021, 11, 28, 8, 2, 0), Salida = new DateTime(2021, 11, 28, 12, 4, 7), Fecha = new DateTime(2021, 11, 28), };
+            Biometrico E4dia60 = new Biometrico() { Entrada = new DateTime(2021, 11, 29, 8, 2, 43), Salida = new DateTime(2021, 11, 29, 12, 3, 43), Fecha = new DateTime(2021, 11, 29), };
+            Biometrico E4dia61 = new Biometrico() { Entrada = new DateTime(2021, 11, 30, 8, 0, 5), Salida = new DateTime(2021, 11, 30, 12, 1, 40), Fecha = new DateTime(2021, 11, 30), };
+            Biometrico E4dia62 = new Biometrico() { Entrada = new DateTime(2021, 12, 1, 8, 3, 24), Salida = new DateTime(2021, 12, 1, 12, 2, 30), Fecha = new DateTime(2021, 12, 1), };
+            Biometrico E4dia63 = new Biometrico() { Entrada = new DateTime(2021, 12, 2, 8, 4, 52), Salida = new DateTime(2021, 12, 2, 12, 2, 9), Fecha = new DateTime(2021, 12, 2), };
+            Biometrico E4dia64 = new Biometrico() { Entrada = new DateTime(2021, 12, 3, 8, 2, 33), Salida = new DateTime(2021, 12, 3, 12, 5, 17), Fecha = new DateTime(2021, 12, 3), };
+            Biometrico E4dia65 = new Biometrico() { Entrada = new DateTime(2021, 12, 4, 8, 1, 12), Salida = new DateTime(2021, 12, 4, 12, 5, 32), Fecha = new DateTime(2021, 12, 4), };
+            Biometrico E4dia66 = new Biometrico() { Entrada = new DateTime(2021, 12, 5, 8, 0, 59), Salida = new DateTime(2021, 12, 5, 12, 5, 28), Fecha = new DateTime(2021, 12, 5), };
+            Biometrico E4dia67 = new Biometrico() { Entrada = new DateTime(2021, 12, 6, 8, 4, 7), Salida = new DateTime(2021, 12, 6, 12, 5, 30), Fecha = new DateTime(2021, 12, 6), };
+            Biometrico E4dia68 = new Biometrico() { Entrada = new DateTime(2021, 12, 7, 8, 5, 55), Salida = new DateTime(2021, 12, 7, 12, 2, 2), Fecha = new DateTime(2021, 12, 7), };
+            Biometrico E4dia69 = new Biometrico() { Entrada = new DateTime(2021, 12, 8, 8, 4, 47), Salida = new DateTime(2021, 12, 8, 12, 5, 56), Fecha = new DateTime(2021, 12, 8), };
+            Biometrico E4dia70 = new Biometrico() { Entrada = new DateTime(2021, 12, 9, 8, 4, 32), Salida = new DateTime(2021, 12, 9, 12, 5, 7), Fecha = new DateTime(2021, 12, 9), };
+            Biometrico E4dia71 = new Biometrico() { Entrada = new DateTime(2021, 12, 10, 8, 0, 23), Salida = new DateTime(2021, 12, 10, 12, 3, 53), Fecha = new DateTime(2021, 12, 10), };
+            Biometrico E4dia72 = new Biometrico() { Entrada = new DateTime(2021, 12, 11, 8, 1, 15), Salida = new DateTime(2021, 12, 11, 12, 0, 16), Fecha = new DateTime(2021, 12, 11), };
+            Biometrico E4dia73 = new Biometrico() { Entrada = new DateTime(2021, 12, 12, 8, 0, 15), Salida = new DateTime(2021, 12, 12, 12, 1, 44), Fecha = new DateTime(2021, 12, 12), };
+            Biometrico E4dia74 = new Biometrico() { Entrada = new DateTime(2021, 12, 13, 8, 1, 30), Salida = new DateTime(2021, 12, 13, 12, 3, 11), Fecha = new DateTime(2021, 12, 13), };
+            Biometrico E4dia75 = new Biometrico() { Entrada = new DateTime(2021, 12, 14, 8, 1, 58), Salida = new DateTime(2021, 12, 14, 12, 0, 1), Fecha = new DateTime(2021, 12, 14), };
+            Biometrico E4dia76 = new Biometrico() { Entrada = new DateTime(2021, 12, 15, 8, 0, 22), Salida = new DateTime(2021, 12, 15, 12, 4, 34), Fecha = new DateTime(2021, 12, 15), };
+            Biometrico E4dia77 = new Biometrico() { Entrada = new DateTime(2021, 12, 16, 8, 5, 41), Salida = new DateTime(2021, 12, 16, 12, 3, 59), Fecha = new DateTime(2021, 12, 16), };
+            Biometrico E4dia78 = new Biometrico() { Entrada = new DateTime(2021, 12, 17, 8, 1, 36), Salida = new DateTime(2021, 12, 17, 12, 2, 58), Fecha = new DateTime(2021, 12, 17), };
+            Biometrico E4dia79 = new Biometrico() { Entrada = new DateTime(2021, 12, 18, 8, 3, 51), Salida = new DateTime(2021, 12, 18, 12, 1, 33), Fecha = new DateTime(2021, 12, 18), };
+            Biometrico E4dia80 = new Biometrico() { Entrada = new DateTime(2021, 12, 19, 8, 3, 19), Salida = new DateTime(2021, 12, 19, 12, 4, 28), Fecha = new DateTime(2021, 12, 19), };
+            Biometrico E4dia81 = new Biometrico() { Entrada = new DateTime(2021, 12, 20, 8, 0, 4), Salida = new DateTime(2021, 12, 20, 12, 5, 31), Fecha = new DateTime(2021, 12, 20), };
+            Biometrico E4dia82 = new Biometrico() { Entrada = new DateTime(2021, 12, 21, 8, 3, 17), Salida = new DateTime(2021, 12, 21, 12, 1, 29), Fecha = new DateTime(2021, 12, 21), };
+            Biometrico E4dia83 = new Biometrico() { Entrada = new DateTime(2021, 12, 22, 8, 1, 24), Salida = new DateTime(2021, 12, 22, 12, 2, 24), Fecha = new DateTime(2021, 12, 22), };
+            Biometrico E4dia84 = new Biometrico() { Entrada = new DateTime(2021, 12, 23, 8, 2, 29), Salida = new DateTime(2021, 12, 23, 12, 1, 49), Fecha = new DateTime(2021, 12, 23), };
+            Biometrico E4dia85 = new Biometrico() { Entrada = new DateTime(2021, 12, 24, 8, 1, 11), Salida = new DateTime(2021, 12, 24, 12, 1, 48), Fecha = new DateTime(2021, 12, 24), };
+            Biometrico E4dia86 = new Biometrico() { Entrada = new DateTime(2021, 12, 25, 8, 1, 26), Salida = new DateTime(2021, 12, 25, 12, 3, 55), Fecha = new DateTime(2021, 12, 25), };
+            Biometrico E4dia87 = new Biometrico() { Entrada = new DateTime(2021, 12, 26, 8, 0, 22), Salida = new DateTime(2021, 12, 26, 12, 0, 1), Fecha = new DateTime(2021, 12, 26), };
+            Biometrico E4dia88 = new Biometrico() { Entrada = new DateTime(2021, 12, 27, 8, 0, 8), Salida = new DateTime(2021, 12, 27, 12, 0, 21), Fecha = new DateTime(2021, 12, 27), };
+            Biometrico E4dia89 = new Biometrico() { Entrada = new DateTime(2021, 12, 28, 8, 5, 37), Salida = new DateTime(2021, 12, 28, 12, 4, 4), Fecha = new DateTime(2021, 12, 28), };
+            Biometrico E4dia90 = new Biometrico() { Entrada = new DateTime(2021, 12, 29, 8, 1, 58), Salida = new DateTime(2021, 12, 29, 12, 1, 33), Fecha = new DateTime(2021, 12, 29), };
 
             //VENTAS
             Venta E4v1 = new Venta() { Fecha = new DateTime(2021, 12, 15), Estado = EstadoVenta.Completado };
@@ -667,6 +682,11 @@ namespace CargaDatos
                 {
                     Fecha = new DateTime(2022, 01, 05),
                     Calificacion = Calificacion.Excelente
+                },
+                Contrato = new Contrato()
+                {
+                    Fecha = DateTime.Now,
+                    Estado = ContratoEstado.Pendiente,
                 }
             };
 
@@ -852,6 +872,9 @@ namespace CargaDatos
             };
             List<Configuracion> listaConfiguracion = new List<Configuracion>() { config };
 
+
+           
+            
 
 
             //PeriodoPruebaDB repos = new PeriodoPruebaDB();

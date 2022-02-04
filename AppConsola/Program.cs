@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Procesos;
 using System;
 using System.Linq;
 
@@ -14,6 +15,11 @@ namespace AppConsola
 
             using (var db = PeriodoPruebaDBBuilder.Crear())
             {
+
+                //Guardar datos y mostrar lista para definir que se ha grabado correctamente
+                #region 
+                /*
+                
                 var listaEmpleados = db.Empleados
                     .Include(empleado => empleado.Evaluacion)
                     .Include(empleado => empleado.Implemento);
@@ -73,6 +79,27 @@ namespace AppConsola
                     Console.Write(empleado.EmpleadoId+ " "+empleado.Nombre);
                 }
 
+                */
+                #endregion
+
+                //verificar horas totales
+
+                #region 
+                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 4);
+                ProTotalHoras prohora = new ProTotalHoras(db);
+
+                if (prohora.ApruebaHoras(tmpEmpleado))
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobo las horas necesarias");
+
+                }
+                else
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " no aprobó las horas necesarias");
+
+                }
+
+                #endregion
             }
         }
     }

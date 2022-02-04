@@ -27,6 +27,7 @@ namespace ModeloDB
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Biometrico> Biometricos { get; set; }
         public DbSet<Configuracion> Configuraciones { get; set; }
+        public DbSet<Contrato> Contratos { get; set; }
         public DbSet<Evaluacion> Evaluaciones { get; set; }
         public DbSet<Implemento> Implementos { get; set; }
         public DbSet<Permiso> Permisos { get; set; }
@@ -52,7 +53,7 @@ namespace ModeloDB
         //configuracion modelo de objetos
         protected override void OnModelCreating(ModelBuilder model)
         {
-            //Clase COnfiguracion sin PK
+            //Clase Configuracion PK distinta a entero
             model.Entity<Configuracion>()
                 .HasKey(configuracion => configuracion.EmpresaNombre);
 
@@ -87,6 +88,12 @@ namespace ModeloDB
                 .HasOne(empleado => empleado.Implemento)
                 .WithOne(implemento => implemento.Empleado)
                 .HasForeignKey<Implemento>(implemento => implemento.EmpleadoId);
+
+            //empleado contrato 
+            model.Entity<Empleado>()
+                .HasOne(empleado => empleado.Contrato)
+                .WithOne(contrato => contrato.Empleado)
+                .HasForeignKey<Contrato>(contrato => contrato.EmpleadoId);
 
 
             // Relacion muchos a muchos Capacitacion - empleado
