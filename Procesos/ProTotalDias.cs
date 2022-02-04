@@ -6,32 +6,34 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Procesos
 {
-    public class ProTotalHoras
+    public class ProTotalDias
     {
         readonly PeriodoPruebaDB db;
 
-        public ProTotalHoras(PeriodoPruebaDB db)
+        public ProTotalDias(PeriodoPruebaDB db)
         {
             this.db = db;
         }
 
-        public bool ApruebaHoras(Empleado empleadoP)
+        public bool ApruebaDias(Empleado empleadoP)
         {
-            CalcHoras calcular = new CalcHoras();
 
             var tmpEmpleado = db.Empleados
                 .Include(emp => emp.Biometricos)
                 .Include(emp => emp.Permisos)
                 .Single(emp => emp.EmpleadoId == empleadoP.EmpleadoId);
 
-            var horaF = 0;
+            var permiso = tmpEmpleado.Permisos.Count();
+            var biometrico = tmpEmpleado.Biometricos.Count();
 
-            foreach (var bio in tmpEmpleado.Biometricos)
-            {              
-                horaF = horaF + calcular.HoraTotal(bio);
+
+            if (biometrico < 90)
+            {
+                biometrico = biometrico + permiso;
             }
 
-            if (horaF == 360)
+
+            if (biometrico == 90)
             {
                 return true;
             }
@@ -39,11 +41,6 @@ namespace Procesos
             {
                 return false;
             }
-
-
-
-
-
         }
     }
 }

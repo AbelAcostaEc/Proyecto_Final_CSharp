@@ -90,12 +90,30 @@ namespace AppConsola
 
                 if (prohora.ApruebaHoras(tmpEmpleado))
                 {
-                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobo las horas necesarias");
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobó las horas necesarias");
 
                 }
                 else
                 {
                     Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " no aprobó las horas necesarias");
+
+                }
+
+                #endregion
+
+                //verificar dias totales
+
+                #region 
+                ProTotalDias proDias = new ProTotalDias(db);
+
+                if (proDias.ApruebaDias(tmpEmpleado))
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobó los días necesarias");
+
+                }
+                else
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " no aprobó los días necesarias");
 
                 }
 
