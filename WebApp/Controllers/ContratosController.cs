@@ -33,6 +33,13 @@ namespace WebApp.Controllers
                     .ThenInclude(empleado => empleado.Implemento)
                 .Include(contrato => contrato.Empleado)
                     .ThenInclude(empleado => empleado.Biometricos)
+                .Include(contrato => contrato.Empleado)
+                    .ThenInclude(empleado => empleado.Permisos)
+                .Include(contrato => contrato.Empleado)
+                    .ThenInclude(empleado => empleado.CapacitacionAsistencias)
+                .Include(contrato => contrato.Empleado)
+                    .ThenInclude(empleado => empleado.Ventas)
+
 
 
                  .Single(contrato => contrato.ContratoId == id)   // Consulta el contrato id
