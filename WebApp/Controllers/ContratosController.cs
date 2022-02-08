@@ -54,22 +54,20 @@ namespace WebApp.Controllers
         [HttpPost]
         public IActionResult Validar(Contrato contrato)
         {
-            ProTotalHoras pro = new ProTotalHoras(db);
+            ProAprobacionContrato pro = new ProAprobacionContrato(db);
             var tmpEmpleado = db.Empleados.Find(contrato.EmpleadoId);
 
-            if (pro.ApruebaHoras(tmpEmpleado)){
+            if (pro.ApruebaContrato(tmpEmpleado)){
                 
                 contrato.Estado = ContratoEstado.Aprobada;
                 contrato.Fecha = System.DateTime.Now;
                 TempData["mensaje"] = $"Contrato de fecha {contrato.Fecha} ha sido aprobado exitosamente";
-
             }
             else
             {
                 contrato.Estado = ContratoEstado.Rechazada;
                 contrato.Fecha = System.DateTime.Now;
                 TempData["mensaje"] = $"Contrato de fecha {contrato.Fecha} ha sido rechazado exitosamente";
-
             }
             contrato.Empleado = null;
             contrato.EmpleadoId = tmpEmpleado.EmpleadoId;

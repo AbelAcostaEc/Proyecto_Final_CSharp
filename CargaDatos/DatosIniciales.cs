@@ -177,7 +177,7 @@ namespace CargaDatos
                 Evaluacion = new Evaluacion()
                 {
                     Fecha = new DateTime(2022, 01, 05),
-                    Calificacion = Calificacion.Buena
+                    Calificacion = Calificacion.Excelente
                 },
                 Contrato = new Contrato()
                 {
@@ -510,14 +510,14 @@ namespace CargaDatos
                 },
                 Implemento = new Implemento()
                 {
-                    Estado = EstadoImplemento.Excelente,
+                    Estado = EstadoImplemento.Mala,
                     Observacion = "Implementos de trabajo en buen estado"
                 },
 
                 Evaluacion = new Evaluacion()
                 {
                     Fecha = new DateTime(2022, 01, 05),
-                    Calificacion = Calificacion.Buena
+                    Calificacion = Calificacion.Mala
                 },
                 Contrato = new Contrato()
                 {
@@ -737,7 +737,7 @@ namespace CargaDatos
                 Capacitacion1,Capacitacion2,Capacitacion3,Capacitacion4,Capacitacion5
             };
 
-            //Asistencias Capacitacion 1
+            //Asistencias Capacitacion  Empleado 1
 
             CapacitacionAsistencia CapE1As1 = new CapacitacionAsistencia()
             {
@@ -766,7 +766,7 @@ namespace CargaDatos
                 Empleado = Empleado1
             };
 
-            //Asistencias Capacitacion 2
+            //Asistencias Capacitacion Empleado 2
             CapacitacionAsistencia CapE2As1 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion1,
@@ -794,7 +794,7 @@ namespace CargaDatos
                 Empleado = Empleado2
             };
 
-            //Asistencias Capacitacion 3
+            //Asistencias Capacitacion Empleado 3
             CapacitacionAsistencia CapE3As1 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion1,
@@ -806,11 +806,12 @@ namespace CargaDatos
                 Capacitacion = Capacitacion2,
                 Empleado = Empleado3
             };
-            CapacitacionAsistencia CapE3As3 = new CapacitacionAsistencia()
+            /*CapacitacionAsistencia CapE3As3 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion3,
                 Empleado = Empleado3
             };
+            */
             CapacitacionAsistencia CapE3As4 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion4,
@@ -822,7 +823,7 @@ namespace CargaDatos
                 Empleado = Empleado3
             };
 
-            //Asistencias Capacitacion 4
+            //Asistencias Capacitacion Empleado 4
             CapacitacionAsistencia CapE4As1 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion1,
@@ -858,7 +859,7 @@ namespace CargaDatos
             {
                 CapE1As1,CapE1As2,CapE1As3,CapE1As4,CapE1As5,
                 CapE2As1,CapE2As2,CapE2As3,CapE2As4,CapE2As5,
-                CapE3As1,CapE3As2,CapE3As3,CapE3As4,CapE3As5,
+                CapE3As1,CapE3As2,CapE3As4,CapE3As5,
                 CapE4As1,CapE4As2,CapE4As4,CapE4As5,
 
             };

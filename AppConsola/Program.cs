@@ -82,10 +82,13 @@ namespace AppConsola
                 */
                 #endregion
 
+
+                //Dato empleado para verificar procesos 
+                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 4);
                 //verificar horas totales
 
                 #region 
-                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 4);
+
                 ProTotalHoras prohora = new ProTotalHoras(db);
 
                 if (prohora.ApruebaHoras(tmpEmpleado))
@@ -121,8 +124,6 @@ namespace AppConsola
 
                 //Verificar ventas totales
                 #region 
-
-                
                 ProComprobacionVentas proventa = new ProComprobacionVentas(db);
 
                 if (proventa.CompruebaVentas(tmpEmpleado))
@@ -136,6 +137,72 @@ namespace AppConsola
 
                 }
                 #endregion
+
+                //Verificar Evaluacion
+                #region 
+                ProEvaluacion proEvaluacion = new ProEvaluacion(db);
+
+                if (proEvaluacion.CompruebaEvaluacion(tmpEmpleado))
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobó la Evaluación de Supervisor");
+
+                }
+                else
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " no aprobó la Evaluación de Supervisor");
+
+                }
+                #endregion
+
+                //Verificar Implemento
+                #region 
+                ProcesoEstadoImplemento proImplemento = new ProcesoEstadoImplemento(db);
+
+                if (proImplemento.CompruebaImplemento(tmpEmpleado))
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobó el estado de Implementos");
+
+                }
+                else
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " no aprobó el estado de Implementos");
+
+                }
+                #endregion
+
+                //Verificar Asistenica a Capacitacion
+                #region 
+                ProAsistenciaCapacitacion proAsisCap = new ProAsistenciaCapacitacion(db);
+
+                if (proAsisCap.CompruebaAsistencia(tmpEmpleado))
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobó la asistencia a capacitaciones");
+
+                }
+                else
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " no aprobó la asistencia a capacitaciones");
+
+                }
+                #endregion
+
+                //Verificar Asistenica a Capacitacion
+                #region 
+                ProAprobacionContrato proContrato = new ProAprobacionContrato(db);
+
+                if (proContrato.ApruebaContrato(tmpEmpleado))
+                {
+                    Console.WriteLine("Se aprobó el contrato del empleado " + tmpEmpleado.Nombre );
+
+                }
+                else
+                {
+                    Console.WriteLine("No se aprobó el contrato del empleado " + tmpEmpleado.Nombre);
+
+                }
+                #endregion
+
+
             }
         }
     }
