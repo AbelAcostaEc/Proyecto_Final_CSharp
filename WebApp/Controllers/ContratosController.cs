@@ -70,8 +70,10 @@ namespace WebApp.Controllers
                 }
             }
 
+
             ViewBag.horas = TotalHorasLaboradas;
             ViewBag.ventasEfectivas = ventastotal;
+            ViewBag.CapacitacionesTotales = db.Capacitaciones.Count();
 
 
             return View(contrato);
@@ -87,13 +89,13 @@ namespace WebApp.Controllers
                 
                 contrato.Estado = ContratoEstado.Aprobada;
                 contrato.Fecha = System.DateTime.Now;
-                TempData["mensaje"] = $"Contrato de fecha {contrato.Fecha} ha sido aprobado exitosamente";
+                TempData["mensaje"] = $"Contrato del Empleado {contrato.Empleado.Nombre} ha sido aprobado ";
             }
             else
             {
                 contrato.Estado = ContratoEstado.Rechazada;
                 contrato.Fecha = System.DateTime.Now;
-                TempData["mensaje"] = $"Contrato de fecha {contrato.Fecha} ha sido rechazado exitosamente";
+                TempData["mensaje"] = $"Contrato del Empleado {contrato.Empleado.Nombre} ha sido rechazado ";
             }
             contrato.Empleado = null;
             contrato.EmpleadoId = tmpEmpleado.EmpleadoId;
