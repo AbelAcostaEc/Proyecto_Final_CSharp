@@ -29,6 +29,7 @@ namespace WebApp.Controllers
         public IActionResult Validar(int id)
         {
 
+            CalcHoras horastotales = new CalcHoras();
 
             var contrato = db.Contratos
                 .Include(contrato => contrato.Empleado)
@@ -48,6 +49,31 @@ namespace WebApp.Controllers
 
                  .Single(contrato => contrato.ContratoId == id)   // Consulta el contrato id
                 ;
+
+
+            //MUESTRA HORAS TOTALES
+            var TotalHorasLaboradas = 0;
+            foreach (var bio in contrato.Empleado.Biometricos)
+            {
+
+                TotalHorasLaboradas = TotalHorasLaboradas + horastotales.HoraTotal(bio);
+            }
+
+            //MUESTRA VENTAS TOTALES
+            var ventastotal = 0;
+
+            foreach (var venta in contrato.Empleado.Ventas)
+            {
+                if (venta.Estado == EstadoVenta.Completado)
+                {
+                    ventastotal = ventastotal + 1;
+                }
+            }
+
+            ViewBag.horas = TotalHorasLaboradas;
+            ViewBag.ventasEfectivas = ventastotal;
+
+
             return View(contrato);
         }
        

@@ -36,9 +36,11 @@
                         <td>Evaluacion</td>
                         <td>Estado Implemento</td>
                         <td>Dias Laborados</td>
+                        <td>Horas Laborados</td>
                         <td>Permisos laborales</td>
                         <td>Capacitaciones Asistidas</td>
                         <td>Ventas Realizadas</td>
+                        <td>Ventas Efectivas</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,9 +49,12 @@
                         <td>@Model.Empleado.Evaluacion.Calificacion</td>
                         <td>@Model.Empleado.Implemento.Estado</td>
                         <td>@Model.Empleado.Biometricos.Count()</td>
+                        <td>@ViewBag.horas</td>
                         <td>@Model.Empleado.Permisos.Count()</td>
                         <td>@Model.Empleado.CapacitacionAsistencias.Count()</td>
                         <td>@Model.Empleado.Ventas.Count()</td>
+                        <td>@ViewBag.ventasEfectivas</td>
+
 
                     </tr>
 
