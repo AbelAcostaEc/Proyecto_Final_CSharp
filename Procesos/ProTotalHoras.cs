@@ -19,6 +19,8 @@ namespace Procesos
         {
             CalcHoras calcular = new CalcHoras();
 
+            var configuracion = db.Configuraciones.Single();
+
             var tmpEmpleado = db.Empleados
                 .Include(emp => emp.Biometricos)
                 .Include(emp => emp.Permisos)
@@ -38,7 +40,7 @@ namespace Procesos
             horaF = horaF + horasPermiso;
 
 
-            if (horaF == 360)
+            if (horaF == configuracion.HorasTotales)
             {
                 return true;
             }

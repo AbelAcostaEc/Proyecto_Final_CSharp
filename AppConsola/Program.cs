@@ -85,7 +85,7 @@ namespace AppConsola
                 //verificar horas totales
 
                 #region 
-                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 3);
+                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 2);
                 ProTotalHoras prohora = new ProTotalHoras(db);
 
                 if (prohora.ApruebaHoras(tmpEmpleado))

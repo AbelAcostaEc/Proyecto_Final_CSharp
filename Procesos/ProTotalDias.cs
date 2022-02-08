@@ -17,6 +17,7 @@ namespace Procesos
 
         public bool ApruebaDias(Empleado empleadoP)
         {
+            var configuracion = db.Configuraciones.Single();
 
             var tmpEmpleado = db.Empleados
                 .Include(emp => emp.Biometricos)
@@ -27,13 +28,13 @@ namespace Procesos
             var biometrico = tmpEmpleado.Biometricos.Count();
 
 
-            if (biometrico < 90)
+            if (biometrico < configuracion.DiasMinimos)
             {
                 biometrico = biometrico + permiso;
             }
 
 
-            if (biometrico == 90)
+            if (biometrico == configuracion.DiasMinimos)
             {
                 return true;
             }
