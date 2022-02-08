@@ -9,14 +9,14 @@ namespace AppConsola
     {
         static void Main(string[] args)
         {
-
+            //grabar datos en Base
             Grabar grabar = new Grabar();
             grabar.DatosIni();
 
             using (var db = PeriodoPruebaDBBuilder.Crear())
             {
 
-                //Guardar datos y mostrar lista para definir que se ha grabado correctamente
+                //mostrar lista para definir que se ha grabado correctamente
                 #region 
                 /*
                 
@@ -85,7 +85,7 @@ namespace AppConsola
                 //verificar horas totales
 
                 #region 
-                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 4);
+                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 3);
                 ProTotalHoras prohora = new ProTotalHoras(db);
 
                 if (prohora.ApruebaHoras(tmpEmpleado))

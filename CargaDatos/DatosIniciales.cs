@@ -737,7 +737,7 @@ namespace CargaDatos
                 Capacitacion1,Capacitacion2,Capacitacion3,Capacitacion4,Capacitacion5
             };
 
-            //Asistencias
+            //Asistencias Capacitacion 1
 
             CapacitacionAsistencia CapE1As1 = new CapacitacionAsistencia()
             {
@@ -766,7 +766,7 @@ namespace CargaDatos
                 Empleado = Empleado1
             };
 
-            //EMPLEADO 2
+            //Asistencias Capacitacion 2
             CapacitacionAsistencia CapE2As1 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion1,
@@ -794,7 +794,7 @@ namespace CargaDatos
                 Empleado = Empleado2
             };
 
-            //EMPLEADO 3
+            //Asistencias Capacitacion 3
             CapacitacionAsistencia CapE3As1 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion1,
@@ -822,7 +822,7 @@ namespace CargaDatos
                 Empleado = Empleado3
             };
 
-            //EMPLEADO 4
+            //Asistencias Capacitacion 4
             CapacitacionAsistencia CapE4As1 = new CapacitacionAsistencia()
             {
                 Capacitacion = Capacitacion1,
@@ -863,6 +863,7 @@ namespace CargaDatos
 
             };
 
+            //Tabla configuracion
              Configuracion config = new Configuracion()
             {
                 DiasMinimos = 90,

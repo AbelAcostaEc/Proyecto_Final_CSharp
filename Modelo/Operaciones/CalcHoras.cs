@@ -21,15 +21,15 @@ namespace Modelo.Operaciones
 
 
                 TimeSpan diferencia = (biometrico.Salida.Date+salida) - (biometrico.Entrada.Date + entrada);
-                var diferenciaenminutos = diferencia.TotalHours;
-                 respuesta = ((int)diferenciaenminutos);
+                var diferenciaenHoras = diferencia.TotalHours;
+                 respuesta = ((int)diferenciaenHoras);
             }
             else
             {
                 TimeSpan salida = new TimeSpan(12, 0, 0);
                 TimeSpan diferencia = (biometrico.Salida.Date + salida) - biometrico.Entrada;
-                var diferenciaenminutos = diferencia.TotalHours;
-                respuesta = ((int)diferenciaenminutos);
+                var diferenciaenHoras = diferencia.TotalHours;
+                respuesta = ((int)diferenciaenHoras);
             }
             
 

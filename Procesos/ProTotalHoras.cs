@@ -25,11 +25,18 @@ namespace Procesos
                 .Single(emp => emp.EmpleadoId == empleadoP.EmpleadoId);
 
             var horaF = 0;
+            var permiso = tmpEmpleado.Permisos.Count();
+
+            var horasPermiso = permiso * 4;
 
             foreach (var bio in tmpEmpleado.Biometricos)
             {              
+
                 horaF = horaF + calcular.HoraTotal(bio);
             }
+
+            horaF = horaF + horasPermiso;
+
 
             if (horaF == 360)
             {
