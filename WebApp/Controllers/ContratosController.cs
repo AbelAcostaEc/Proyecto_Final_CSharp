@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Modelo.Entidades;
 using ModeloDB;
+using Modelo.Operaciones;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Procesos;
 
 namespace WebApp.Controllers
 {
@@ -22,6 +25,7 @@ namespace WebApp.Controllers
 
         }
         // Pantalla para la validación de la matrícula
+        
         public IActionResult Validar(int id)
         {
 
@@ -45,6 +49,34 @@ namespace WebApp.Controllers
                  .Single(contrato => contrato.ContratoId == id)   // Consulta el contrato id
                 ;
             return View(contrato);
+        }
+       
+        [HttpPost]
+        public IActionResult Validar(Contrato contrato)
+        {
+            ProTotalHoras pro = new ProTotalHoras(db);
+            var tmpEmpleado = db.Empleados.Find(contrato.EmpleadoId);
+
+            if (pro.ApruebaHoras(tmpEmpleado)){
+                
+                contrato.Estado = ContratoEstado.Aprobada;
+                contrato.Fecha = System.DateTime.Now;
+                TempData["mensaje"] = $"Contrato de fecha {contrato.Fecha} ha sido aprobado exitosamente";
+
+            }
+            else
+            {
+                contrato.Estado = ContratoEstado.Rechazada;
+                contrato.Fecha = System.DateTime.Now;
+                TempData["mensaje"] = $"Contrato de fecha {contrato.Fecha} ha sido rechazado exitosamente";
+
+            }
+            contrato.Empleado = null;
+            contrato.EmpleadoId = tmpEmpleado.EmpleadoId;
+            db.Contratos.Update(contrato);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }
