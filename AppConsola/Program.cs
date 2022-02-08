@@ -85,7 +85,7 @@ namespace AppConsola
                 //verificar horas totales
 
                 #region 
-                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 2);
+                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 4);
                 ProTotalHoras prohora = new ProTotalHoras(db);
 
                 if (prohora.ApruebaHoras(tmpEmpleado))
@@ -117,6 +117,24 @@ namespace AppConsola
 
                 }
 
+                #endregion
+
+                //Verificar ventas totales
+                #region 
+
+                
+                ProComprobacionVentas proventa = new ProComprobacionVentas(db);
+
+                if (proventa.CompruebaVentas(tmpEmpleado))
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " aprobó las ventas necesarias");
+
+                }
+                else
+                {
+                    Console.WriteLine("El empleado " + tmpEmpleado.Nombre + " no aprobó las ventas necesarias");
+
+                }
                 #endregion
             }
         }

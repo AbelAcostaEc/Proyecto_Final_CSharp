@@ -639,7 +639,7 @@ namespace CargaDatos
             Venta E4v17 = new Venta() { Fecha = new DateTime(2021, 12, 8), Estado = EstadoVenta.Completado };
             Venta E4v18 = new Venta() { Fecha = new DateTime(2021, 11, 21), Estado = EstadoVenta.Completado };
             Venta E4v19 = new Venta() { Fecha = new DateTime(2021, 12, 29), Estado = EstadoVenta.Completado };
-            Venta E4v20 = new Venta() { Fecha = new DateTime(2021, 10, 23), Estado = EstadoVenta.Completado };
+            Venta E4v20 = new Venta() { Fecha = new DateTime(2021, 10, 23), Estado = EstadoVenta.Rechazado };
             Venta E4v21 = new Venta() { Fecha = new DateTime(2021, 12, 13), Estado = EstadoVenta.Completado };
             Venta E4v22 = new Venta() { Fecha = new DateTime(2021, 11, 10), Estado = EstadoVenta.Completado };
             Venta E4v23 = new Venta() { Fecha = new DateTime(2021, 11, 29), Estado = EstadoVenta.Completado };
