@@ -209,12 +209,16 @@ namespace AppConsola
                 {
                     Console.WriteLine(
                         bio.BiometricoId + " " +
+                         "Fecha:  " +
+                        bio.Fecha.ToShortDateString() + " " +
                         "Entrada:  " +
                         bio.Entrada.Hour + " " +
                         bio.Entrada.Minute + " " +
                         "Salida:  " +
                         bio.Salida.Hour + " " +
-                        bio.Salida.Minute + " " 
+                        bio.Salida.Minute + " " +
+                        "Empleado:  " +
+                        bio.EmpleadoId + " " 
 
 
 

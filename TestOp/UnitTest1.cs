@@ -11,18 +11,18 @@ namespace TestOp
     {
         [Theory]
         [InlineData(4,4)]
-        [InlineData(95,4)]
+        [InlineData(95,3)]
         [InlineData(3,4)]
-        [InlineData(106,4)]
+        [InlineData(106,3)]
         [InlineData(5,4)]
         [InlineData(6,4)]
         [InlineData(7,4)]
         [InlineData(8,4)]
         [InlineData(9,4)]
         [InlineData(10,4)]
-        [InlineData(123,4)]
+        [InlineData(123,3)]
         [InlineData(200,4)]
-        [InlineData(210,4)]
+        [InlineData(210,3)]
         public void Test1(int bioId, int resEsperado)
         {
             int resCalc;
