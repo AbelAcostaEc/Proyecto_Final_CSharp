@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Modelo.Entidades.Biometrico">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACABAAAAAAAEAAABAgAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Biometrico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Capacitacion">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEACAAAAAAAAAAAAAAAAAABAAAAEAA=</HashCode>
+      <FileName>Entidades\Capacitacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.CapacitacionAsistencia">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAAAAgAAEAA=</HashCode>
+      <FileName>Entidades\CapacitacionAsistencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Configuracion">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAEAAgBAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Configuracion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Contrato">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAACEAAABAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Entidades\Contrato.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Empleado">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAABBIACABAgIAAAIAAAAAAgAAAAAgAAAI=</HashCode>
+      <FileName>Entidades\Empleado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Evaluacion">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgABAAAAAAAEAAABAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Evaluacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Implemento">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAAAABAAAAo=</HashCode>
+      <FileName>Entidades\Implemento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Permiso">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAABAAAAAAAGAAABAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Entidades\Permiso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo.Entidades.Venta">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQBAAAAAAAEAAABAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Entidades\Venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Modelo.Entidades.ContratoEstado">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Entidades\Contrato.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Modelo.Entidades.Calificacion">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Entidades\Evaluacion.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Modelo.Entidades.EstadoImplemento">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Entidades\Implemento.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Modelo.Entidades.EstadoVenta">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Venta.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
