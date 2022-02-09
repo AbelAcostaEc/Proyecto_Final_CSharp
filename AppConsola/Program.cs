@@ -202,7 +202,24 @@ namespace AppConsola
                 }
                 #endregion
 
+                Console.WriteLine("------------LISTA BIOMETRICO-------------");
+                var listaBIo = db.Biometricos;
 
+                foreach (var bio in listaBIo)
+                {
+                    Console.WriteLine(
+                        bio.BiometricoId + " " +
+                        "Entrada:  " +
+                        bio.Entrada.Hour + " " +
+                        bio.Entrada.Minute + " " +
+                        "Salida:  " +
+                        bio.Salida.Hour + " " +
+                        bio.Salida.Minute + " " 
+
+
+
+                    );
+                }
             }
         }
     }
