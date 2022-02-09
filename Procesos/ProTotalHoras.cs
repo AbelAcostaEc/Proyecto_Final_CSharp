@@ -29,7 +29,7 @@ namespace Procesos
             var horaF = 0;
             var permiso = tmpEmpleado.Permisos.Count();
 
-            var horasPermiso = permiso * 4;
+            var horasPermiso = permiso * configuracion.horasTrabajo;
 
             foreach (var bio in tmpEmpleado.Biometricos)
             {              

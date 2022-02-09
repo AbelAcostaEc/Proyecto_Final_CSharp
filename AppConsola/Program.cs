@@ -84,7 +84,7 @@ namespace AppConsola
 
 
                 //Dato empleado para verificar procesos 
-                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 4);
+                var tmpEmpleado = db.Empleados.Single(emp => emp.EmpleadoId == 2);
                 //verificar horas totales
 
                 #region 
@@ -202,6 +202,11 @@ namespace AppConsola
                 }
                 #endregion
 
+                //Para Pruebas Unitarias lista de Biometrico en Memoria
+
+                #region 
+
+                /*
                 Console.WriteLine("------------LISTA BIOMETRICO-------------");
                 var listaBIo = db.Biometricos;
 
@@ -220,10 +225,10 @@ namespace AppConsola
                         "Empleado:  " +
                         bio.EmpleadoId + " " 
 
-
-
                     );
                 }
+                */
+                #endregion
             }
         }
     }

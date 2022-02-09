@@ -12,7 +12,8 @@ namespace Modelo.Entidades
         public string EmpresaNombre { get; set; }
         public int DiasMinimos { get; set; }
         public int VentasMinimo { get; set; }
-        
+        public int horasTrabajo { get; set; }
+
 
 
 

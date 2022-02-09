@@ -12,7 +12,7 @@ namespace CargaDatos
 
         public enum ListasTipo
         {
-            Empleados,AsistenciaCapacitacion,Capacitaciones,Configuracion
+            Empleados, AsistenciaCapacitacion, Capacitaciones, Configuracion
         }
 
         public Dictionary<ListasTipo, object> Carga()
@@ -865,18 +865,19 @@ namespace CargaDatos
             };
 
             //Tabla configuracion
-             Configuracion config = new Configuracion()
+            Configuracion config = new Configuracion()
             {
                 DiasMinimos = 90,
                 EmpresaNombre = "Empresa ASAA",
                 HorasTotales = 360,
-                VentasMinimo = 30
+                VentasMinimo = 30,
+                horasTrabajo = 4
             };
             List<Configuracion> listaConfiguracion = new List<Configuracion>() { config };
 
 
-           
-            
+
+
 
 
             //PeriodoPruebaDB repos = new PeriodoPruebaDB();
