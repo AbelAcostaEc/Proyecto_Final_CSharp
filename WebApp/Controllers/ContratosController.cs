@@ -79,6 +79,7 @@ namespace WebApp.Controllers
             return View(contrato);
         }
        
+        //Metodo para validar
         [HttpPost]
         public IActionResult Validar(Contrato contrato)
         {
@@ -97,8 +98,10 @@ namespace WebApp.Controllers
                 contrato.Fecha = System.DateTime.Now;
                 TempData["mensaje"] = $"Contrato del Empleado {contrato.Empleado.Nombre} ha sido rechazado ";
             }
+
             contrato.Empleado = null;
             contrato.EmpleadoId = tmpEmpleado.EmpleadoId;
+
             db.Contratos.Update(contrato);
             db.SaveChanges();
 
